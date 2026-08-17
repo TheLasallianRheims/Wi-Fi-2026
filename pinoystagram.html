@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Pinoystagram</title>
+    <link rel="stylesheet" href="pinoystagram.css">
+</head>
+<body>
+    <div class="viewport">
+        <main class="page" aria-label="Pinoystagram landing page">
+            <!-- Background shapes -->
+            <div class="shape shape--gradient-top" aria-hidden="true">
+                <div class="shape__inner"></div>
+            </div>
+            <div class="shape shape--gradient-bottom" aria-hidden="true">
+                <div class="shape__inner"></div>
+            </div>
+            <div class="shape shape--bar-top" aria-hidden="true">
+                <div class="shape__inner"></div>
+            </div>
+            <div class="shape shape--bar-bottom" aria-hidden="true">
+                <div class="shape__inner"></div>
+            </div>
+
+            <!-- Decorative dots -->
+            <div class="dot dot--purple" aria-hidden="true">
+                <img src="assets/ellipse-purple.svg" alt="">
+            </div>
+            <div class="dot dot--yellow" aria-hidden="true">
+                <img src="assets/ellipse-yellow.svg" alt="">
+            </div>
+
+            <!-- Header -->
+            <button class="header__menu" type="button" aria-label="Open menu">
+                <img src="assets/menu.svg" alt="">
+            </button>
+            <div class="header__logo">
+                <img src="assets/wifi-logo.png" alt="WiFi logo">
+            </div>
+            <button class="header__search" type="button" aria-label="Search">
+                <img src="assets/search.svg" alt="">
+            </button>
+
+            <!-- App icon -->
+            <div class="app-icon">
+                <div class="app-icon__gradient" aria-hidden="true"></div>
+                <div class="app-icon__image-wrap">
+                    <img src="assets/app-icon.png" alt="Pinoystagram app icon">
+                </div>
+            </div>
+
+            <!-- Brand name -->
+            <h1 class="brand-name">Pinoystagram</h1>
+
+            <!-- Carousel navigation -->
+            <button class="carousel-chevron" type="button" aria-label="Next slide">
+                <img src="assets/chevron.svg" alt="">
+            </button>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
