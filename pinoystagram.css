@@ -44,6 +44,10 @@ body {
     margin: 0 auto;
     background-color: #fff9f4;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Background gradient shapes */
@@ -53,6 +57,7 @@ body {
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 0;
 }
 
 .shape__inner {
@@ -142,6 +147,7 @@ body {
     width: 13.11%;
     aspect-ratio: 1;
     pointer-events: none;
+    z-index: 0;
 }
 
 .dot img {
@@ -219,11 +225,12 @@ body {
 
 /* App icon */
 .app-icon {
-    position: absolute;
-    left: 36.15%;
-    top: 39.45%;
+    position: relative;
     width: 24.98%;
+    max-width: 120px;
     aspect-ratio: 118.158 / 117;
+    margin-bottom: 20px;
+    z-index: 10;
 }
 
 .app-icon__gradient {
@@ -260,15 +267,14 @@ body {
 
 /* Brand name */
 .brand-name {
-    position: absolute;
-    left: 27.06%;
-    top: 52.34%;
+    position: relative;
     font-family: 'Lobster Two', cursive;
     font-size: clamp(28px, 8.8vw, 41.6px);
     font-weight: 400;
     font-style: normal;
     line-height: 1.1;
     white-space: nowrap;
+    z-index: 10;
     background: linear-gradient(
         90deg,
         rgb(255, 145, 0) 0%,
@@ -308,12 +314,11 @@ body {
 /* Landscape phones — keep content vertically centered */
 @media (orientation: landscape) and (max-height: 500px) {
     .app-icon {
-        top: 28%;
         width: 18%;
+        margin-bottom: 10px;
     }
 
     .brand-name {
-        top: 58%;
         font-size: clamp(22px, 5vh, 32px);
     }
 
