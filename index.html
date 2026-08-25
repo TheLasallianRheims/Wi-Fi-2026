@@ -32,7 +32,7 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #222;
+            background-color: var(--primary-cream);
             display: flex;
             justify-content: center;
             color: var(--text-dark);
@@ -40,10 +40,9 @@
 
         .desktop-container {
             width: 100%;
-            max-width: 1200px;
             background-color: var(--primary-cream);
             position: relative;
-            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            box-shadow: none;
             overflow-x: hidden;
         }
 
@@ -55,6 +54,9 @@
             padding: 20px 40px;
             position: relative;
             z-index: 20;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
         }
 
         .logo-container {
@@ -107,6 +109,9 @@
             padding: 20px 40px 60px;
             position: relative;
             min-height: 450px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
         }
 
         .hero-content {
@@ -205,7 +210,7 @@
             right: 0;
             width: 60%;
             height: 100%;
-            overflow: hidden;
+            overflow: visible;
             z-index: 1;
         }
 
@@ -230,6 +235,10 @@
             padding: 0 40px 60px;
             position: relative;
             z-index: 10;
+            margin-top: 80px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .text-card {
@@ -471,6 +480,91 @@
         /* SVG Helpers */
         .icon-svg { width: 100%; height: 100%; }
         .small-icon { width: 18px; height: 18px; fill: var(--text-dark); }
+
+        /* --- Responsive Styles (Mobile) --- */
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+            .logo-container {
+                order: 1;
+            }
+            .search-icon {
+                order: 2;
+                margin-left: auto;
+            }
+            .nav-links {
+                order: 3;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+                margin-top: 15px;
+                padding-bottom: 10px;
+                justify-content: flex-start;
+            }
+            .nav-links::-webkit-scrollbar {
+                height: 4px;
+            }
+            .nav-links::-webkit-scrollbar-thumb {
+                background: var(--primary-gold);
+                border-radius: 2px;
+            }
+
+            .hero-section {
+                flex-direction: column;
+                padding: 20px;
+                min-height: auto;
+            }
+            .hero-content {
+                width: 100%;
+                padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .hero-title-large {
+                font-size: clamp(40px, 18vw, 110px);
+                margin-bottom: 10px;
+            }
+            .hero-description {
+                max-width: 100%;
+            }
+            .hero-graphics {
+                position: relative;
+                width: 100%;
+                height: 350px;
+                margin-top: 20px;
+                overflow: visible;
+            }
+            .sun-svg {
+                left: 5%;
+                width: 120px;
+                height: 120px;
+            }
+            .mountain-group {
+                width: 150%;
+                right: -25%;
+            }
+
+            .content-section {
+                padding: 0 20px 40px;
+            }
+            .text-card {
+                padding: 20px;
+            }
+            .apps-section {
+                padding: 20px;
+            }
+            footer {
+                padding: 20px 20px 40px;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
