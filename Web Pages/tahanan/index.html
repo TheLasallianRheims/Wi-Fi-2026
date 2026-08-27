@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lasallian Rheims - Desktop Wireframe</title>
+    <title>Tahanan</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap');
 
@@ -68,16 +68,16 @@
             letter-spacing: 1px;
         }
 
-        .logo-circle {
-            width: 32px;
-            height: 32px;
-            background-color: var(--terracotta);
-            border-radius: 50%;
+        .logo-container img {
+            width: 150px;
+            height: auto;
+            object-fit: contain;
         }
+
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 24px;
             align-items: center;
         }
 
@@ -86,9 +86,7 @@
             color: var(--primary-brown);
             font-family: 'Inter', sans-serif;
             font-weight: 600;
-            font-size: 14px;
-            Width: 73px;
-            Height: 24px;
+            font-size: 16px;
         }
 
         .nav-links a.active {
@@ -404,7 +402,7 @@
         }
 
         .footer-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Tiro Devanagari Hindi', serif;
             color: var(--footer-green);
             font-size: 32px;
             letter-spacing: 1px;
@@ -576,16 +574,15 @@
     <!-- Header -->
     <header>
         <div class="logo-container">
-            <div class="logo-circle"></div>
-            LOGO
+            <img src="../../assets/wifi-logo.png" alt="Wi-Fi logo">
         </div>
         <nav class="nav-links">
             <a href="index.html" class="active">Tahanan</a>
-            <a href="#">"Spoti-FI"</a>
-            <a href="#">"GrabE!"</a>
-            <a href="wifipedia.html">"Wi-Fipedia"</a>
-            <a href="pinoystagram.html">"Pinoystagram"</a>
-            <a href="#">"NetFi-lix"</a>
+            <a href="#"> Spoti-FI</a>
+            <a href="#"> GrabE!</a>
+            <a href="../Special-webpages/Wifipedia/wifipedia.html"> Wi-Fipedia</a>
+            <a href="../Special-webpages/Pinoystagram/pinoystagram.html"> Pinoystagram</a>
+            <a href="#">NetFi-lix</a>
             <a href="nakaraan.html">Nakaraan</a>
             <a href="abawt.html">Abawt</a>
         </nav>
@@ -617,7 +614,7 @@
             <!-- Custom Geometric Graphics -->
             <div class="hero-graphics">
                 <!-- Sun -->
-                <img class="sun-svg" src="tahanan assets/sun.png" alt="">
+                <img class="sun-svg" src="sun.png" alt="">
 
                 <!-- Layered Mountains -->
                 <svg class="mountain-group" viewBox="0 0 800 400" preserveAspectRatio="xMaxYMax meet">

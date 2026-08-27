@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>Pinoystagram | Tinig ng Bagong Henerasyon</title>
+	<style>
+		* { box-sizing: border-box; }
+
+		html, body { min-height: 100%; }
+
+		body {
+			margin: 0;
+			background: #fff9f4;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
+
+		.mobile-content {
+			display: block;
+			width: 100%;
+			max-width: 480px;
+			min-height: 100dvh;
+			margin: 0 auto;
+		}
+
+		.mobile-content img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.image-map {
+			position: relative;
+			width: 100%;
+		}
+
+		.image-button {
+			position: absolute;
+			top: 58%;
+			height: 18%;
+			width: 38%;
+			border-radius: 50%;
+			outline: none;
+		}
+
+		.image-button:focus-visible {
+			outline: 3px solid #7025c4;
+			outline-offset: 4px;
+		}
+
+		.image-button--photographers { left: 9%; }
+		.image-button--creators { right: 9%; }
+        
+        .header__logo {
+            position: absolute;
+            left: 11.84%;
+            top: 0.78%;
+            width: 21.78%;
+            aspect-ratio: 103 / 47;
+        }
+	</style>
+</head>
+<body>
+	<main class="mobile-content" aria-label="Pinoystagram Tinig ng Bagong Henerasyon">
+		<div class="image-map">
+			<img src="pinoystagram assets/page2-full.png" alt="Pinoystagram Tinig ng Bagong Henerasyon page">
+			<a class="image-button image-button--photographers" href="pinoystagram.html" aria-label="Open Mga Photographer"></a>
+			<a class="image-button image-button--creators" href="pinoystagram.html" aria-label="Open Mga Content Creator"></a>
+		</div>
+                    <div class="header__logo">
+                <img src="pinoystagram assets/wifi-logo.png" alt="WiFi logo">
+            </div>
+	</main>
+</body>
+</html>
