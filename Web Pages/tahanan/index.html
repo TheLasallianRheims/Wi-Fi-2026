@@ -9,7 +9,7 @@
 
         :root {
             /* Required Palette */
-            --primary-brown: #895129;
+            --primary-brown: #6D3B17;
             --primary-gold: #CC9900;
             --terracotta: #E2725B;
             --primary-cream: #FFFDD0;
@@ -123,8 +123,11 @@
         .hero-title-small {
             color: var(--primary-brown);
             font-weight: 800;
-            font-size: 24px;
-            transform: rotate(-7deg);
+            font-style: italic;
+            font-size: 42px;
+            width: 385px;
+            height: 68px;
+            transform: rotate(-14deg);
             display: inline-block;
             margin-bottom: -15px;
             margin-left: 10px;
@@ -134,10 +137,10 @@
         .hero-title-large {
             color: var(--primary-brown);
             font-size: 110px;
-            transform: rotate(-7deg);
+            transform: rotate(-14deg);
             font-weight: 800;
             line-height: 0.9;
-            margin-bottom: 20px;
+            
             text-shadow: 3px 3px 0px rgba(255,255,255,0.6);
             letter-spacing: -2px;
         }
@@ -163,7 +166,15 @@
             color: var(--primary-gold);
         }
 
+        .hero-subtitle-image {
+            display: block;
+            width: min(100%, 530px);
+            height: auto;
+            margin: 0 0 30px 0;
+        }
+
         .hero-description {
+            font-family: 'Inter', sans-serif;
             font-size: 12px;
             font-weight: 600;
             color: var(--primary-brown);
@@ -597,7 +608,7 @@
             <div class="hero-content">
                 <div class="hero-title-small">Konek na sa</div>
                 <div class="hero-title-large">WI-<span>Fi</span></div>
-                <div class="hero-subtitle">WIKANG <span>FILIPINO</span></div>
+                <img class="hero-subtitle-image" src="Group 19.png" alt="Wikang Filipino">
                 
                 <div class="hero-description">
                     Isang pagdiriwang ng wika, kultura,<br>at pagkakakilanlan.<br>
