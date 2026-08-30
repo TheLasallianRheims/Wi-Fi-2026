@@ -29,6 +29,7 @@ html {
     margin: 0;
     padding: 0;
     background-color: var(--color-page-background);
+    overflow-x: hidden;
 }
 
 body {
@@ -46,7 +47,8 @@ body {
         env(safe-area-inset-right, 0px)
         env(safe-area-inset-bottom, 0px)
         env(safe-area-inset-left, 0px);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -123,7 +125,7 @@ body {
 .brand-name {
     position: relative;
     font-family: 'Lobster Two', cursive;
-    font-size: clamp(28px, 8.8vw, 41.6px);
+    font-size: clamp(34px, 10vw, 78px);
     font-weight: 400;
     font-style: normal;
     line-height: 1.4;
@@ -158,14 +160,15 @@ body {
 
 .shape__inner {
     flex-shrink: 0;
-    transform: rotate(-46.13deg);
+    transform: rotate(56.67deg);
 }
 
 .shape--gradient-top {
-    left: -50%;
-    top: -40.43%;
-    width: 172.09%;
-    height: 78.47%;
+    left: 45.83%;
+    top: -67.58%;
+    width: 60.30%;
+    height: 125.34%;
+    rotate: -120.67deg;
 }
 
 .shape--gradient-top .shape__inner {
@@ -181,10 +184,11 @@ body {
 }
 
 .shape--gradient-bottom {
-    left: -78.65%;
+    left: -87.65%;
     top: 56.54%;
     width: 172.09%;
     height: 78.47%;
+    rotate: -25deg;
 }
 
 .shape--gradient-bottom .shape__inner {
@@ -200,14 +204,15 @@ body {
 }
 
 .shape--bar-bottom {
-    left: 65.33%;
-    top: 65.33%;
-    width: 48.48%;
-    height: 21.65%;
+    left: 75.33%;
+    top: 85.33%;
+    width: 12.86%;
+    height: 24.29%;
+    rotate: -120.67deg;
 }
 
 .shape--bar-bottom .shape__inner {
-    width: 9.65%;
+    width: 16.86%;
     height: 133.82%;
     border-radius: 86px;
     background: linear-gradient(
@@ -219,15 +224,16 @@ body {
 }
 
 .shape--bar-top {
-    left: 21.14%;
-    top: 16.31%;
-    width: 32.16%;
-    height: 14.4%;
+    left: 53.14%;
+    top: .31%;
+    width: 12.86%;
+    height: 24.29%;
+    rotate: -120.67deg;
 }
 
 .shape--bar-top .shape__inner {
-    width: 14.54%;
-    height: 128.75%;
+    width: 16.86%;
+    height: 133.82%;
     border-radius: 86px;
     background: linear-gradient(
         256.45deg,
@@ -236,6 +242,32 @@ body {
         rgb(225, 48, 108) 101.01%
     );
 }
+/* Decorative dots */
+.dot {
+    position: absolute;
+    width: 13.11%;
+    aspect-ratio: 1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.dot img {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.dot--purple {
+    left: 8.84%;
+    top: 45.01%;
+}
+
+.dot--yellow {
+    left: 110.45%;
+    top: 49.96%;
+    transform: translateX(-100%);
+}
+
 .scroll-arrow {
     position: absolute;
     left: 50%;
@@ -291,6 +323,7 @@ body {
     width: 141px;
     height: 63px;
     object-fit: contain;
+    position: relative;
 }
 
 button {
@@ -302,7 +335,7 @@ button {
 }
 
 .main {
-    background: linear-gradient(var(--color-main),var(--color-bottom-main));
+    background: #FFFDD0;
     min-height: 0;
     width: 100%;
     margin: auto;
@@ -312,21 +345,14 @@ button {
 }
 
 .heading {
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    font-size: 76px;
-    margin-top: 60px;
-    margin-left: 84px;
-    padding: 0 41px 0 41px;
-    color: var(--color-pure-white);
-    border-left: 4px solid var(--color-heading-line);
-    box-sizing: border-box;
-}
-
-#subheading {
-    margin: 18px 0 18px 0;
-    font-size: 24px;
-    color: var(--color-subheading);
+    font-family: Lobster Two;
+    width: 546px;
+    height: 143px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    color: black;
 }
 
 #main {
@@ -334,29 +360,22 @@ button {
     letter-spacing: -0.06em;
 }
 
-.movie-cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 75px;
-    width: min(100%, 1280px);
-    margin: 150px auto 0;
-    z-index: 2;
-    transform: translateY(-40px);
-    box-sizing: border-box;
-    justify-items: center;
+.creator-image {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.movie-cards img {
-    display: block;
-    width: min(100%, 619px);
-    height: 348px;
-    object-fit: cover;
-    border-radius: 16px;
+.creator-image img {
+    max-width: 80%;
+    height: auto;
 }
 
-.movie-cards img:hover {
-    transform: scale(1.02);
-}
+
 
 .desktop-footer {
     background-color: var(--color-pure-white);
