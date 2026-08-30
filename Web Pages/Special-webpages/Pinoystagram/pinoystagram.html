@@ -1,18 +1,68 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinoystagram</title>
-    <link rel="stylesheet" href="pinoystagram.css">
+    
+    <script>
+        // Function to check screen width and redirect
+        function checkScreenSize() {
+            if (window.innerWidth <= 740) {
+                window.location.href = "pinoystagram-mobile.html";
+            }
+        }
+        
+        // Check on page load
+        checkScreenSize();
+        
+        // Check continuously on window resize
+        window.addEventListener('resize', checkScreenSize);
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="pinoystagram-desktop.css">
+    
 </head>
+
 <body>
     <div class="viewport">
-        <main class="page" aria-label="Pinoystagram landing page">
-            <!-- Background shapes -->
+
+    <header class="navbar">
+        <a href="tahanan.html" class="logo">
+            <img src="pinoystagram assets/logo.png" alt="Wi-Fi Logo">
+        </a>
+        <nav class="nav-buttons">
+            <a class="nav-button" href="tahanan.html">Tahanan</a>
+            <a class="nav-button" href="netfilix.html">Netfi-lix</a>
+            <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
+            <a class="nav-button" href="#">Spoti-Fi</a>
+            <a class="nav-button" href="">GrabE!</a>
+            <a class="nav-button" href="pinoystagram.html">Pinoystagram</a>
+            <a class="nav-button" href="abawt.html">Abawt</a>
+            <a class="nav-button" href="nakaraan.html">Nakaraan</a>
+        </nav>
+        <button>
+            <img src="pinoystagram assets/search.svg" alt="Search">
+        </button>
+    </header>
+
+    <section class="home">
+                    <div class="app-icon">
+                <div class="app-icon__gradient" aria-hidden="true"></div>
+                <div class="app-icon__image-wrap">
+                    <img src="pinoystagram assets/Pinoystagram.png" alt="Pinoystagram app icon">
+                </div>
+                    </div>
+                    <!-- Brand name -->
+                <h1 class="brand-name">Pinoystagram</h1>
+                            <!-- Background shapes -->
             <div class="shape shape--gradient-top" aria-hidden="true">
                 <div class="shape__inner"></div>
             </div>
@@ -25,44 +75,94 @@
             <div class="shape shape--bar-bottom" aria-hidden="true">
                 <div class="shape__inner"></div>
             </div>
+    </section>
 
-            <!-- Decorative dots -->
-            <div class="dot dot--purple" aria-hidden="true">
-                <img src="pinoystagram assets/ellipse-purple.svg" alt="">
-            </div>
-            <div class="dot dot--yellow" aria-hidden="true">
-                <img src="pinoystagram assets/ellipse-yellow.svg" alt="">
+        <a href="#main-content" class="scroll-arrow">
+            <img src="pinoystagram assets/scroll-arrow.png" alt="Scroll down">
+        </a>
+        
+    </section>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content">
+
+        <!-- Title -->
+        <section class="heading">
+            <p id="subheading">
+                PINILI PARA LANG SA IYO
+            </p>
+            <h1 id="main">
+                TOP PICKS <br> <span style="color:#DD1313;margin-top: 40px;">NG ASJ</span>
+            </h1>
+        </section>
+
+        <!-- Movie Cards -->
+        <section class="movie-cards">
+            <img src="netfilix assets/movie1.png" alt="Movie 1">
+            <img src="netfilix assets/movie2.png" alt="Movie 2">
+            <img src="netfilix assets/movie3.png" alt="Movie 3">
+            <img src="netfilix assets/movie4.png" alt="Movie 4">
+            <img src="netfilix assets/movie5.png" alt="Movie 5">
+            <img src="netfilix assets/movie6.png" alt="Movie 6">
+        </section>
+    </main>
+
+
+    <footer class="desktop-footer">
+
+        <div class="footer-top" style="margin-bottom:-50px;">
+            <img src="pinoystagram assets/desktop-footer-logos.png" alt="Logos" style="transform: translate(-20px, 5px);">
+            <p>THE LASALLIAN RHEIMS</p>
+            <img src="pinoystagram assets/footer-icons.png" alt="Icons" style="transform: translateY(-5px)">
+        </div>
+
+        <div class="footer-bottom">
+            <img style="margin: 0;" src="pinoystagram assets/line3.png" alt="">
+            <p>
+                <img src="pinoystagram assets/mail.png" alt="">
+                info@rheims.net
+            </p>
+            <p style="margin-top: -15px;">
+                <img src="pinoystagram assets/phone.png" alt="">
+                0920 426 5779
+            </p>
+            <img style="margin: 0; margin-bottom: 20px;" src="pinoystagram assets/line4.png" alt="">
+            <p style="font-weight: 400;">
+                Academy of Saint John - La Salle Greenhills and 
+                De La Salle Santiago Zobel Partner School
+            </p>   
+            <p style="font-weight:400; font-size: 19.89px; margin-top: -10px;"> 
+                Brgy. Sta. Clara, City of General Trias
+            </p>
+
+            <!-- Centered Star Line -->
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px; margin: 10px 0;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+                <img src="pinoystagram assets/low-star.png" alt="" style="margin: 0 10px; width: 34.81px; height: 34.81px;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
             </div>
 
-            <!-- Header -->
-            <button class="header__menu" type="button" aria-label="Open menu">
-                <img src="pinoystagram assets/menu.svg" alt="">
-            </button>
-            <div class="header__logo">
-                <img src="pinoystagram assets/wifi-logo.png" alt="WiFi logo">
-            </div>
-            <button class="header__search" type="button" aria-label="Search">
-                <img src="pinoystagram assets/search.svg" alt="">
-            </button>
+            <p style="font-size: 19.89px; font-weight:400; margin-top: -10px;">
+                © The Lasallian Rheims. All Rights Reserved.
+            </p> 
 
-            <!-- App icon -->
-            <div class="app-icon">
-                <div class="app-icon__gradient" aria-hidden="true"></div>
-                <div class="app-icon__image-wrap">
-                    <img src="pinoystagram assets/Pinoystagram.png" alt="Pinoystagram app icon">
+            <!-- Decorative Bottom Line -->
+            <div class="fancy-corner-line">
+                <div class="corner-left">
+                    <div class="corner-left-box"></div>
+                    <div class="corner-left-line"></div>
+                </div>
+                <div class="center-line"></div>
+                <div class="corner-right">
+                    <div class="corner-right-box"></div>
+                    <div class="corner-right-line"></div>
                 </div>
             </div>
+       </div>
 
-            <!-- Brand name -->
-            <h1 class="brand-name">Pinoystagram</h1>
+       <div class="bottom-bar"></div>
 
-            <!-- Carousel navigation -->
-            <button class="carousel-chevron" type="button" aria-label="Next slide">
-                <img src="pinoystagram assets/chevron.svg" alt="">
-            </button>
-        </main>
-    </div>
-
-    <script src="index.js"></script>
+    </footer>
+</div>
 </body>
 </html>
