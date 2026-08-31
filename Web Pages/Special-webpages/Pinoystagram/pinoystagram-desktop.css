@@ -406,14 +406,49 @@ button {
     color: #6F2AC3;
 }
 
+.bottom-right-shape {
+    position: absolute;
+    left: 1570px;
+    top: 700px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bottom-right-shape-2 {
+    position: absolute;
+    left: 1700px;
+    top: 800px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
+
 .middle-right-star {
     position: absolute;
-    left: 1650px;
-    top: 675px;
+    left: 1730px;
+    top: 700px;
     width: auto;
     height: auto;
     pointer-events: none;
     z-index: 5;
+}
+.middle-right-ellipse {
+    position: absolute;
+    left: 1870px;
+    top: 550px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.middle-right-ellipse img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .middle-right-star img {
@@ -424,7 +459,7 @@ button {
 
 .bottom-right-star {
     position: absolute;
-    left: 1500px;
+    left: 1575px;
     top: 973px;
     width: auto;
     height: auto;
@@ -437,6 +472,7 @@ button {
     width: 100%;
     height: auto;
 }
+
 
 #main {
     margin: 24px 0 24px 0;
@@ -499,6 +535,8 @@ button {
     min-height: 0;
     height: auto;
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 
 .desktop-footer p {
