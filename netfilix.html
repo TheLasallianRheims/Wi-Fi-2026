@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netfi-lix</title>
+    
+    <script>
+        // Check if screen width is 768px or smaller
+        if (window.innerWidth <= 768) {
+        // Redirect to mobile-specific HTML file
+            window.location.href = "netfilix-mobile.html";
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="netfilix.css">
+    
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="assets/logo.png" alt="Wi-Fi Logo">
+        </a>
+        <nav class="nav-buttons">
+            <a class="nav-button" href="index.html">Tahanan</a>
+            <a class="nav-button" href="#">Netfi-lix</a>
+            <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
+            <a class="nav-button" href="#">Spoti-Fi</a>
+            <a class="nav-button" href="#">GrabE!</a>
+            <a class="nav-button" href="#">Pinoystagram</a>
+            <a class="nav-button" href="#">Abawt</a>
+            <a class="nav-button" href="#">Nakaraan</a>
+        </nav>
+        <button>
+            <img src="assets/wifipedia assets/search2.png" alt="Search">
+        </button>
+    </header>
+
+    <section class="home">
+
+        <section class="netfilix-landing">
+            <div class="netfilix-title">
+                <div class="netfilix-logo">
+                    <img src="assets/netfilix assets/netfilix-logo.png" alt="Netfi-lix!">
+                </div>
+                <div class="netfilix-text">
+                    <p>
+                        ETFI-LIX
+                    </p>
+                </div>
+            </div>
+            <div class="netfilix-subtext">
+                <p>
+                    ISANG GABI, ISANG <span style="color:#B51717">KWENTO</span>.
+                </p>
+            </div>
+        </section>
+
+        <a href="#main-content" class="scroll-arrow">
+            <img src="assets/netfilix assets/scroll-arrow.png" alt="Scroll down">
+        </a>
+        
+    </section>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content">
+
+        <!-- Title -->
+        <section class="heading">
+            <p id="subheading">
+                PINILI PARA LANG SA IYO
+            </p>
+            <h1 id="main">
+                TOP PICKS <br> <span style="color:#DD1313;margin-top: 40px;">NG ASJ</span>
+            </h1>
+        </section>
+
+        <!-- Movie Cards -->
+        <section class="movie-cards">
+            <img src="assets/netfilix assets/movie1.png" alt="Movie 1">
+            <img src="assets/netfilix assets/movie2.png" alt="Movie 2">
+            <img src="assets/netfilix assets/movie3.png" alt="Movie 3">
+            <img src="assets/netfilix assets/movie4.png" alt="Movie 4">
+            <img src="assets/netfilix assets/movie5.png" alt="Movie 5">
+            <img src="assets/netfilix assets/movie6.png" alt="Movie 6">
+        </section>
+    </main>
+
+
+    <footer class="desktop-footer">
+
+        <div class="footer-top" style="margin-bottom:-50px;">
+            <img src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos" style="transform: translate(-20px, 5px);">
+            <p>THE LASALLIAN RHEIMS</p>
+            <img src="assets/netfilix assets/footer-icons.png" alt="Icons" style="transform: translateY(-5px)">
+        </div>
+
+        <div class="footer-bottom">
+            <img style="margin: 0;" src="assets/wifipedia assets/line3.png" alt="">
+            <p>
+                <img src="assets/netfilix assets/mail.png" alt="">
+                info@rheims.net
+            </p>
+            <p style="margin-top: -15px;">
+                <img src="assets/netfilix assets/phone.png" alt="">
+                0920 426 5779
+            </p>
+            <img style="margin: 0; margin-bottom: 20px;" src="assets/wifipedia assets/line4.png" alt="">
+            <p style="font-weight: 400;">
+                Academy of Saint John - La Salle Greenhills and 
+                De La Salle Santiago Zobel Partner School
+            </p>   
+            <p style="font-weight:400; font-size: 19.89px; margin-top: -10px;"> 
+                Brgy. Sta. Clara, City of General Trias
+            </p>
+
+            <!-- Centered Star Line -->
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px; margin: 10px 0;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+                <img src="assets/netfilix assets/low-star.png" alt="" style="margin: 0 10px; width: 34.81px; height: 34.81px;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+            </div>
+
+            <p style="font-size: 19.89px; font-weight:400; margin-top: -10px;">
+                © The Lasallian Rheims. All Rights Reserved.
+            </p> 
+
+            <!-- Decorative Bottom Line -->
+            <div class="fancy-corner-line">
+                <div class="corner-left">
+                    <div class="corner-left-box"></div>
+                    <div class="corner-left-line"></div>
+                </div>
+                <div class="center-line"></div>
+                <div class="corner-right">
+                    <div class="corner-right-box"></div>
+                    <div class="corner-right-line"></div>
+                </div>
+            </div>
+       </div>
+
+       <div class="bottom-bar"></div>
+
+    </footer>
+
+</body>
+</html>
