@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoti-fi</title>
+    
+    <script>
+        // Check if screen width is 768px or smaller
+        if (window.innerWidth <= 768) {
+        // Redirect to mobile-specific HTML file
+            window.location.href = "netfilix-mobile.html";
+        }
+
+        // Opens and closes the info when the button is clicked
+        function togglePerson(button) {
+        const song = button.closest(".song-icon");
+        const info = song.querySelector(".song-info");
+        info.classList.toggle("open");
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="spotifi.css">
+    
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="spotifi assets/logo.png" alt="Wi-Fi Logo">
+        </a>
+        <nav class="nav-buttons">
+            <a class="nav-button" href="#">Tahanan</a>
+            <a class="nav-button" href="netfilix.html">Netfi-lix</a>
+            <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
+            <a class="nav-button" href="#">Spoti-Fi</a>
+            <a class="nav-button" href="#">GrabE!</a>
+            <a class="nav-button" href="#">Pinoystagram</a>
+            <a class="nav-button" href="#">Abawt</a>
+            <a class="nav-button" href="#">Nakaraan</a>
+        </nav>
+        <button>
+            <img src="spotifi assets/search2.png" alt="Search">
+        </button>
+    </header>
+
+    <section class="home">
+
+        <section class="spotifi-landing">
+            <div class="spotifi-title">
+                <div class="spotifi-logo">
+                    <img src="spotifi assets/spotifi-logo.png" alt="Spoti-Fi!">
+                </div>
+                <div class="spotifi-text">
+                    <p>
+                        SPOTI-FI
+                    </p>
+                </div>
+            </div>
+            <div class="spotifi-subtext">
+                <p>
+                    BAWAT KANTA, MAY <span style="color:#19D61F;">KWENTO</span>.
+                </p>
+            </div>
+        </section>
+
+        <a href="#main-content" class="scroll-arrow">
+            <img src="netfilix assets/scroll-arrow.png" alt="Scroll down">
+        </a>
+        
+    </section>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content">
+
+        <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 800px; margin-top: 50px;">
+            <span class="decorative-line"></span>
+            <img src="spotifi assets/spotifi-star.svg" style="width: 45px; margin: 10px;">
+            <span class="decorative-line"></span>
+        </div>
+        
+        <!-- Title -->
+        <div class="spotifi-title" style="margin: none;">
+            <img src="spotifi assets/spotifi-logo.png" style="margin-top: 20px; margin-right: 60px; height: 170px;">
+            <div class="spotifi-text" style="font-size: 102.18px;">
+                <p>
+                    SPOTI-FI
+                </p>
+            </div>
+            <img src="spotifi assets/spotifi-music-note.svg" style="margin-left: -20px; height: 150px;">
+        </div>
+
+
+        <!-- Description -->
+         <div class="spotifi-description">
+            <p>
+                Himig ng musika, naririnig mo ba? Mula sa mga pinaka malalim na awit hanggang sa pinaka masiglang tugtugan, 
+                paniguradong <span style="color:var(--color-green-text-highlight);">may tumatak sa puso mo</span>. <br><br>
+                Pindutin ang mga larawan sa ibaba at pakinggan ang mga paboritong kanta ng ilang mga estudyante at guro sa paaralan
+                at ang kanilang paliwanag.
+            </p>
+         </div>
+
+         <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 800px; margin-top: 20px;">
+            <span class="decorative-line"></span>
+            <img src="spotifi assets/spotifi-star2.svg" style="width: 45px; margin: 10px;">
+            <span class="decorative-line"></span>
+        </div>
+        
+
+        <section class="spotifi-music-section">
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Sophia Bonifacio .jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4g6QB9ktIdyEW5sIfcp71i?si=G2-9md2aS7yuy9k703GuEg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a>
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Sophia Bonifacio, 7th Grader
+                    </p>
+                    <p class="song-title">"Dito Sa'kin"<br>ni Earl Agustin</p>
+                    <p class="interview-info">
+                        -	"I'd say this is my favorite song because it's a gentle reminder na 'di ka mahirap mahalin, one of the lyrics in the song. 
+                        It's not just for me, but for other people as well, telling us na we are more than enough and we don't have to change ourselves to prove us worthy of love. 
+                        We are special and important in every way possible. Hindi mo kailangang maging perpektong tao — karapat-dapat kang mahalin kahit ano man mangyari. 
+                        Hindi ka mahirap mahalin even if you show your imperfections, your failures, your weaknesses, or kung may pinagdadaanan sa buhay. Always remember na you were 
+                        created for a purpose — you're valued every single day, even when you don't notice it." 
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Philip Tiongco.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1imaIe1NEAaWnLF0BY0V6F?si=VWilxNR7TruSxjyQOxxXSg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Philip Tiongco, 7th Grader
+                    </p>
+                    <p class="song-title">"Sining"<br>ni Dionela</p>
+                    <p class="interview-info">
+                        -	"gustong-gusto ko talaga ung "sining" by Dionela. gusto ko tong song kasi smooth lang ung lyrics saka ung melody. 
+                        ibig sabihin nitong kantang ito na kinokompara mo ung isang tao sa isang sining or artwork, 
+                        na parang inaadmire mo talaga ung isang tao. creative din kasi ung pag-eexpress ng feelings sa isang taong minamahal mo. un lang po. :)))"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Yhaniecaj Yonson .jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1imaIe1NEAaWnLF0BY0V6F?si=VWilxNR7TruSxjyQOxxXSg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Yhaniecaj Yonson, 7th Grader
+                    </p>
+                    <p class="song-title">"Tatsulok"<br>ni Bamboo</p>
+                    <p class="interview-info">
+                        -	"The reason why I like this song is because it holds a very powerful message about social and political inequality. 
+                        In my opinion, the melody and choice of words drew me closer to the song."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Zack Irugin.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1imaIe1NEAaWnLF0BY0V6F?si=VWilxNR7TruSxjyQOxxXSg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Zach Irugin, 7th Grader
+                    </p>
+                    <p class="song-title">"Panaginip"<br>ni Nicole</p>
+                    <p class="interview-info">
+                        -	"because it makes me calm and relaxed."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Ashley Pamintuan.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6IMiW1ZynVwShkCiuB9wkQ?si=3_diYUvdRMisnvQwI6CDug&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Ashley Pamintuan, 8th Grader
+                    </p>
+                    <p class="song-title">"Dati"<br>ni Sam Concepcion</p>
+                    <p class="interview-info">
+                        -	"my favorite OPM song is Dati. it’s my favorite simply because the meaning of the 
+                        song is something i relate to it more than i should."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Ethan Nierva.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/52gnVgaEDDNtq2g0wubuYg?si=wWldz6k9RKmGwEzfPD8Osg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Eithan Nierva, 8th Grader
+                    </p>
+                    <p class="song-title">"Kusapiling"<br>ni Anthony Meneses</p>
+                    <p class="interview-info">
+                        -	"Kusapiling, because its calm and reminds me of how my mom and dad met, its a typical and courting song 
+                        (its what I imagine or what create in my mind whenever I hear this song) and its one of my favorite music aswell. "
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Juliene Bobadilla.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3QPsTiJBaPHx607Dcl0CX1?si=4ZnriYhCSZi5G2gsR8InVw&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Julienne Bobadilla, 8th Grader
+                    </p>
+                    <p class="song-title">"Kahit Ayaw Mo Na"<br>ng This Band</p>
+                    <p class="interview-info">
+                        -	"My favorite opm song is Kahit Ayaw Mo na. Behind its sad and emotional background about failed relationships, 
+                        it still consists of a catchy rhythm that makes me listen to it all the time and thats my why."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Nikkos Sumabat.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1cvCRZIRrLWS4kFhcTnGRt?si=H-hdMqs1Q922t3LkYixxFw&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Nikkos Sumabat, 8th Grader
+                    </p>
+                    <p class="song-title">"Man in the Mirror"<br>ni Waiian</p>
+                    <p class="interview-info">
+                        -	"I like it kasii catchy sha tapos ung vibe kamo parang chill and filipino hiphop at the same time"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Daphne Bontia.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/20gchtRYM7bFiOjYKQB8zZ?si=Y9e06LtvTxCBaY7E4WjXaQ&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Daphne Bontia, 8th Grader
+                    </p>
+                    <p class="song-title">"Beer"<br>ng Itchyworms</p>
+                    <p class="interview-info">
+                        -	"I like it because of its catchy melody and the way it expresses emotions and shows 
+                        how one can grieve to be with someone even if things don't work out."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Moira Magallano.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4g6QB9ktIdyEW5sIfcp71i?si=G2-9md2aS7yuy9k703GuEg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Moira Nicolette Magallano, 9th Grader
+                    </p>
+                    <p class="song-title">"Dito Sa'kin"<br>ni Earl Agustin</p>
+                    <p class="interview-info">
+                        -	"because i really love how the song captures the essence of wanting to stay by someone’s side, 
+                        regardless of the outcomes or whatsoever, and appreciating one’s worth."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Alliyah Angkico .jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4mOjjXKDOR1sel6APULUaN?si=ZqKALbkBQpqzS3upgHIacA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Alliyah Angkico, 9th Grader
+                    </p>
+                    <p class="song-title">"Huwag na Huwag Mong Sasabihin"<br>ni Kitchie Nadal</p>
+                    <p class="interview-info">
+                        -	"it is my fave considering the fact that i find it relatable + the lyrics n tempo of the song is really good."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Paola Encinares.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3FejwInTNiOxTOu0b8V3XX?si=Ui0pIq3_SZSKkX7iLw0IQA&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Paola Encinares, 9th Grader
+                    </p>
+                    <p class="song-title">"Favorite Vice"<br>ni Arthur Nery</p>
+                    <p class="interview-info">
+                        -	"'Favorite Vice' by Arthur Nery is my fav OPM song kasi I love its melody and the emotions it gives. 
+                        It reminds me of how some people can become special sa atin kahit complicated yung sitwasyon."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Nour Kadri.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3QPsTiJBaPHx607Dcl0CX1?si=4ZnriYhCSZi5G2gsR8InVw&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Nour Kadri, 9th Grader
+                    </p>
+                    <p class="song-title">"Kahit Ayaw Mo Na"<br>ng This Band</p>
+                    <p class="interview-info">
+                        -	"My favourite OPM song is kahit ayaw mo na by this band kasi its one of the 
+                        first filipino songs that i learned on guitar, the song seems pretty relatable and its a classic. "
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Athena Santillan.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/639Wg7NFfgbwjSwDphqgvz?si=AlP63_aASpCj3odEksxEMQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Athena Santillan, 9th Grader
+                    </p>
+                    <p class="song-title">"Ang Pag-ibig"<br>ni Rob Deniel</p>
+                    <p class="interview-info">
+                        -	"Unang una pinili ko yung kantang to kasi isa sa mga favorite singers ko ay si Rob Deniel. 
+                        Pinili ko rin ang kantang to kasi pinapakita yung pagka true love na puno ng saya at yung malalim na pangako na mananatili sila sa isa’t isa."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Jade Labrador.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1yDiru08Q6omDOGkZMPnei?si=VYXsqpiwSVub356SVCU8hA&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Jade Labrador, 9th Grader
+                    </p>
+                    <p class="song-title">"Maybe the Night"<br>ng Ben&Ben</p>
+                    <p class="interview-info">
+                        -	"I really love this song cuz it brings me a calm feeling calm vibe ganon"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Jamilla Dotillos.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4mOjjXKDOR1sel6APULUaN?si=ZqKALbkBQpqzS3upgHIacA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Jamilla Dotillos, 9th Grader
+                    </p>
+                    <p class="song-title">"Gitara"<br>ng Parokya ni Edgar</p>
+                    <p class="interview-info">
+                        -	"I loveee this song kasi it’s super catchyyy and I enjoy listening to ittt"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Yvonne Palapag.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/7hLLpJ6stoDmLP4GkjavDh?si=CGOKbnmtRBagJaQpOvWEjg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Yvonne Palapag, 9th Grader
+                    </p>
+                    <p class="song-title">"Panalangin"<br>ng Apo Hiking Society</p>
+                    <p class="interview-info">
+                        -	"Panalangin by Apo Hiking Society is my favorite OPM song because it feels so genuine, like someone really praying for love. The lyrics are easy to relate to, 
+                        and the melody makes it stick in your head. I love it because it shows that true love doesn’t need to be complicated to be meaningful."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Athasya Macinas.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/5uH5Gl7brNoFCpR9Ds9k94?si=2XAbv9itQNCwg1T_aANCIg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Athasya Macinas, 9th Grader
+                    </p>
+                    <p class="song-title">"Buko"<br>ni Jireh Lim</p>
+                    <p class="interview-info">
+                        -	"My favorite opm song is "buko" by jireh lim, it is short for "buhay ko" and the reason why i love it so much is because the meaning of the song is having a lifelong, 
+                        unwavering commitment to someone you love. It is a song i have dedicated to someone which makes it meaningful to me 🙂"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Nimzen Sotelo.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6rGjZgvDfoVOv2p4DEkNcJ?si=WyGP6yTpQDam-Xr8oaI6Jg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Nimzen Sotelo, 9th Grader
+                    </p>
+                    <p class="song-title">"Malay Ko"<br>ni Daniel Padilla</p>
+                    <p class="interview-info">
+                        -	"kase it shows that love can make your world colorful."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Roi Magallano .jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4z928BtE4j1bjhcX9RU44M?si=Z7S85ywAQweV_n2ehHPrVA&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Roi Magallano, 9th Grader
+                    </p>
+                    <p class="song-title">"Kabisado"<br>ng IV of Spades</p>
+                    <p class="interview-info">
+                        -	"For me I think kabisado kita by IV spades kasi ang nararamdaman ko dito ay para siyang soft with a touch of flirt para sa mga taong in 
+                        love or meron na at yung meaning niya para sakin ay kung paano mo kilala at kabisado yung partner or dun sa taong in love ka."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Royce Cruz.jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/34ob61cxp34Sf7KHK6RnSU?si=vF4gtO-4RcWVUyBGIwtjbg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Royce Cruz, 9th Grader
+                    </p>
+                    <p class="song-title">"Sa Susunod Na Lang"<br>nina Skusta Clee, Yuridope, at PDL</p>
+                    <p class="interview-info">
+                        -	"I like this song because this song is about waiting for someone I love and being willing to 
+                        do whatever it takes to be with this person. Because, in the end, I believe this person is worth the wait."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Queenierich Tiempo.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3nmRSlzR7xtAo95GjfIahZ?si=pQP7pU-hSzyo5tDhCzDwuQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Queenierich Tiempo, 9th Grader
+                    </p>
+                    <p class="song-title">"Bibingka"<br>ng Ben&Ben</p>
+                    <p class="interview-info">
+                        -	"My favorite opm po is Bibingka by Ben&Ben. and I love it because whenever I listen to the song, palagi ko pong naaalala someone who is special to me. It also reminds me how christmas is a time where 
+                        kasama po natin yung loved ones po natin and cine-celebrate po natin yung joy and festive feeling ng season. And nakakabigay po sya sakin ng comfort chaka warmth."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Khalil Gaduena.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4rG3h1QwgjSSWz8EIjCFrm?si=gbeeg_72R2-K1vRqb4NQ6A&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Khalil Jaz Gaduena, 10th Grader
+                    </p>
+                    <p class="song-title">"Araw-Araw"<br>ng Ben&Ben</p>
+                    <p class="interview-info">
+                        -	"Para sa akin, ang “Araw-Araw” ay tungkol sa pagmamahal sa isang tao nang tuloy tuloy—hindi lang kapag madali ang lahat, 
+                        kundi sa pagpili at pagpapahalaga sa kanya araw-araw. Katulad sa kanta “Pipiliin ka, Sa Araw-Araw"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Kurt Compuesto.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/67XgbM6GRVeF6AMKGxl6HT?si=vmX_AfwNTPSBPjaGYKtvkg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Kurt Compuesto, 10th Grader
+                    </p>
+                    <p class="song-title">"Chinito"<br>ni Yeng Constantino</p>
+                    <p class="interview-info">
+                        -	"because that reminds me of me like kapag may narinig ako na chinito by yeng like feel ako ako tinutukoy ni yeng."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Mateusz Dungca.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3q2Sp5xZP5nvBbmIQTxvYA?si=eWQRutmyTVKUDGJQcYYfrg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Mateusz Dungca, 10th Grader
+                    </p>
+                    <p class="song-title">"Co-Pilot"<br>ng just hush</p>
+                    <p class="interview-info">
+                        -	"its reminds of a league that I play in antel and when I listen to this song I feel like I'm flying in basketball 
+                        and for a girl who I loved"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Andrea Anchurez.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1hOWWUQZjfqpw0XzOiQFQf?si=LidTCASSRAmklGsrgV2oxQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Andrea Anchurez, 10th Grader
+                    </p>
+                    <p class="song-title">"Jeepney Love"<br>ni Yeng Constantino</p>
+                    <p class="interview-info">
+                        -	"because the song describes exactly how life is. how being with someone you love or the people you 
+                        love can make it feel like ayaw mo nang bumaba ng jeep and ayaw mo nang matapos ung oras that ur spending together"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Cariza Pascual.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/0WZqHCoOBXqgCCIsUZLC2a?si=W3MHZZ7RQICgvQw1pUwbmA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Cariza Pascual, 10th Grader
+                    </p>
+                    <p class="song-title">"Pagsamo"<br>ni Arthur Nery</p>
+                    <p class="interview-info">
+                        -	"because of its calming melody and emotional lyrics. I can relate to the feelings expressed in the song, which makes it meaningful to me."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Joakim Bobadilla.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4FVZYiCvdLIX8NpcY0lzda?si=HrHrdeIKS6eACBP3Avomxw&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Joakim Bobadilla, 10th Grader
+                    </p>
+                    <p class="song-title">"Palayo sa Mundo"<br>nina Arthur Nery at Jolianne</p>
+                    <p class="interview-info">
+                        -	"because arthur nery is a popular filipino singer and he creates songs that relate to my generation. "
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Kean Ortiz.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6s97fltVQXax4ZFkZJdGdP?si=GVHm7IfJSuS0B9XcR_AAiA&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Kean Ortiz, 10th Grader
+                    </p>
+                    <p class="song-title">"Ulan"<br>ni Cueshè</p>
+                    <p class="interview-info">
+                        -	"It reminds me of someone I loved deeply. I dedicated this song to her because every time I listen to it, I always think about the things that 
+                        could’ve happened but didn’t. Every time I listen to this song, I can’t help but miss the things we had before."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Leanne Doak.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4FmeVH5lIipcrOiEdv1Hd2?si=ZXTyETPrSH-47vD_5LT-Kw&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Leanne Doak, 10th Grader
+                    </p>
+                    <p class="song-title">"Love Is"<br>ng The Ridleys</p>
+                    <p class="interview-info">
+                        -	"One of my favorite OPM song to listen to is “Love is” by The Ridleys. Nagustuhan ko ang kantang ito dahil sa kanyang makabuluhang 
+                        pananaw sa pag ibig—ang kawalang kakayahan upang mabigyan ito ng masinsin na kahulugan dahil kulang ang mga salita para mas malinaw na mapaihayag 
+                        ang tunay na kahulugan nito. Ngunit sa kabila ng pagkamisteryoso ng pag ibig, handa pa rin taying tuklasin at matutunan ito kasama ang taong minamahal natin."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Andrea Legaspi.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4UIfLmvtfUdSnoC9O6uXvv?si=KIHN46iSR5emi6kbX4ZMgQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Andrea Legaspi, 11th Grader
+                    </p>
+                    <p class="song-title">"Sikulo"<br>ni Maki</p>
+                    <p class="interview-info">
+                        -	"I like it kasi chill yung start nya pero rinig mo ung pag yearn ni maki eh HAHSHAHAH, I love the lyrics, every word may meaning, 
+                        tapos if you sing it tuloy tuloy ung pagbigkas mo ng salita, pero ang unique ng melody. Although I dont relate to this song, ang saya niyang kantahin, 
+                        pati na rin pakinggan. Yung boses nilang tatlo talaga bagay sa isa’t isa lalo na sa bandang huli ng kanta, simula dun sa “Kabisado ko pa rin, mga tawa mo’t tingin,” nag iba yung melody at tono ng kanta, ang layo sa una kung san kalmado lang, it fits really well nagulat tlga ako like the drum beats? nag iba. Overall its a good song, whether you relate to it or not"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Prinsesa Saclolo.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/26DcgZg9O6YCUVuRukGGhQ?si=rcqIcQVeR3ipzaiy9MjhPA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Prinsesa Saclolo, 11th Grader
+                    </p>
+                    <p class="song-title">"Aura"<br>ng IV of Spades</p>
+                    <p class="interview-info">
+                        -	"Isa ito sa paborito kong kanta dahil ipinapaalala sa akin nito yung dati kong section. Itong kanta na to kasi ay tungkol sa emotional reconnection nung mismong banda, wherein tahanan talaga nila ang musika. Ganon din ako sa dati kong section, they always make me feel like I’m at home when I’m with them. 
+                        Bukod pa dun, eto kasi yung pinaka hihintay na comeback ng IVOS after 5 years, at ang pagbalik ni unique sa banda :)"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Annicka Abarquez.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/26DcgZg9O6YCUVuRukGGhQ?si=rcqIcQVeR3ipzaiy9MjhPA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Anicka Abarquez, 11th Grader
+                    </p>
+                    <p class="song-title">"Take All The Love"<br>ni Arthur Nery</p>
+                    <p class="interview-info">
+                        -	"'Take All The Love' by Arthur Nery, since it’s a combination of soft, comforting melodies and sincere lyrics about selfless devotion, gives me a warm feeling when I 
+                        listen to it, bringing a quiet sense of peace, steady reassurance, and a sweet nostalgia that gently unlocks core memories with the people who mean the most to me."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Marcus Trias.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1AuxZd50Dpaz0cCWphYryh?si=N9gVs4nsR-SLRAiyABZWYQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Miguel Trias, 11th Grader
+                    </p>
+                    <p class="song-title">"Panaginip"<br>ni Iluna</p>
+                    <p class="interview-info">
+                        -	"Its the first ever like semi concert i attended and its the song that stood out."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Uno Velasco.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/26DcgZg9O6YCUVuRukGGhQ?si=rcqIcQVeR3ipzaiy9MjhPA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Uno Velasco, 11th Grader
+                    </p>
+                    <p class="song-title">"Ang Huling El Bimbo"<br>ng Eraserheads</p>
+                    <p class="interview-info">
+                        -	"I like this song because of its emotional storytelling and timeless melody"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Kurt Aquino.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1NopgVCMVhCKIm64tF7auX?si=GSLsyM4SSwyuQY2PYDqiHA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Kurt Aquino, 11th Grader
+                    </p>
+                    <p class="song-title">"With a Smile"<br>ng Eraserheads</p>
+                    <p class="interview-info">
+                        -	"Because this song always reminds me of hope, reassurance and finding a reasson to smile despite struggles"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Dwayne Amparna.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3KhjY6JxrGo6ii77SbILG7?si=A1stKFP6SKSonC1lf4qvrg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Dwayne Amparna, 11th Grader
+                    </p>
+                    <p class="song-title">"Alipin"<br>ng Shamrock</p>
+                    <p class="interview-info">
+                        -	"dahil simple lang pero malalim ang mensahe tungkol sa pagmamahal"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Lykkah Gantalao.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6Srj2NoAIGgBFORh6r5Whs?si=mbwBzH6-R_OvP6pwgL8iFQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Lykkah Gantalao, 11th Grader
+                    </p>
+                    <p class="song-title">"Burnout"<br>ng Sugarfree</p>
+                    <p class="interview-info">
+                        -	"Ang Burnout kasi may iba't ibang meaning yan e, pero sa kanta ng Sugarfree may ibang pinapahiwatig yung kanta. For me, 
+                        this song reminded me of someone that I liked for almost 2 years."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Sage Saflor.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4cBm8rv2B5BJWU2pDaHVbF?si=GfbXQMIlQ824Bl0N61DdBg&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Sage Saflor, 11th Grader
+                    </p>
+                    <p class="song-title">"Multo"<br>ng Cup of Joe</p>
+                    <p class="interview-info">
+                        -	"I feel drawn to the lyricism within the song and it really does capture the emotion that it wants to bring out from the listener. 
+                        Part of the reason why I like this song is that we all have our own “multo” in our lives, and this song capitalizes on that shared human experience, 
+                        which creates relatability. Furthermore, the instrumentals enhance the song because they feel almost “pushy” at times, which emphasize feelings of pain 
+                        and heartbreak. Overall, I like the song because it’s not only catchy, but it also captures the essence of the emotion that it tries to invoke."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Wren Añabieza.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1NopgVCMVhCKIm64tF7auX?si=GSLsyM4SSwyuQY2PYDqiHA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Wren Añabieza, 11th Grader
+                    </p>
+                    <p class="song-title">"Pahintulot"<br>ng Shirebound</p>
+                    <p class="interview-info">
+                        -	"As of right now, I think my favorite OPM song might be Pahintulot by Shirebound because I like the instrumentals of the song, and as of right now, it kind of resonates, or parang it just clicks with me, 
+                        as of right now, something like that. Basta it's one of my go-to songs as of now, every time I'm just randomly playing or doing assessments ito una kong pinipili 
+                        and yeah, and I don't really want to say that I "relate" with the song, but I do like the meaning and in a way rin nmn baka nga nakaka relate ako something ganon."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Louise Fortuno.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4v8P0GLVWoFojZJgecPGcm?si=TEafLFybRrWiEvJm2ACTHw&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Louise Fortuno, 11th Grader
+                    </p>
+                    <p class="song-title">"Tell Me Where It Hurts"<br>ng MYMP</p>
+                    <p class="interview-info">
+                        -	"My go-to opm song is “tell me where it hurts” by MYMP. I really like how chill and comforting their songs are, and i somehow relate to alot of them too:))"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/David Daria.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6RQySI96HtQn9PNSQrqJOs?si=8f5aWuuWRCmfO-WfhkXsPA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        David Daria, 12th Grader
+                    </p>
+                    <p class="song-title">"Umaaraw, Umuulan"<br>ng Rivermaya</p>
+                    <p class="interview-info">
+                        -	"Kasi, pinaparating nya na may mga oras tayo na magaganda at mahihirap buhay. As a student, I think na makakarelate tayo dito kasi may mga pagkakataon na nabuburnout tayo because of our acads pero it doesn’t mean na susuko tayo agad. Naging paborito ko sya kasi nagbibigay sya ng message na kapag nagkakaexperience tayo ng masamang bagay, 
+                        di dapat tayo sumuko kasi mapapalitan din ‘to ng magandang resulta sa dulo. "
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Alex Torres.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3bJy1UduTNMnnk1soBYyrK?si=bZ9v6WY7T1GVpR7bltYU5Q&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Alex Torres, 12th Grader
+                    </p>
+                    <p class="song-title">"Magkunwari"<br>ng December Avenue</p>
+                    <p class="interview-info">
+                        -	"It's a song about love. Lagi kasi akong unrequited love, and there are a lot of things that I've been needing to say all the time. Feeling ko lagi na lang akong 
+                        nai-ignore sa pagmamahal dahil nga may times na nagpanggap lang pala ang tao because we were young back then. Then I grew older, nagkaroon na ako ng genuine love, but sadly, 
+                        mali pala yung sitwasyon na yon, so dun na papasok yung title, hence, "Magkunwari." It tackles the struggles of pretending and the general opinion, but it's not a hinder for 
+                        genuine acceptance dahil nga you really cared for that person and willing ka makasama yung tao regardless of the situation kasi alam niyong kakayanin nyo magkasama."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Czean De Leon.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/1SfgyEiZOkKo5K8KnoAolj?si=pDTq3uVHTqqgljjeGfMqUA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Czean De Leon, 12th Grader
+                    </p>
+                    <p class="song-title">"Tayong Dalawa"<br>ni Rey Valera</p>
+                    <p class="interview-info">
+                        -	"Gusto ko yang kanta na yan dahil naiisip ko ang aking girlfriend na si sab."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Lamarcus Calica.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/2IMODbij0lZ5CuAjZi0IDE?si=AY21w5g0TimuoKUXM_LGfg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Lamarcuz Calica, 12th Grader
+                    </p>
+                    <p class="song-title">"Sila"<br>ng SUD</p>
+                    <p class="interview-info">
+                        -	"favorite song ko ito kase dinedicate ko sya sa taong mahal ko and its my girlfriend and bawat lyrics nag re remind saakin kung gaano ko ka mahal 
+                        ang girlfriend ko and of course yung feelings ko sa kanya at kung gaano ako kasaya kasama sya."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Hannah Bello.jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/3pT7wGF5w6Jhgj7w08dCeQ?si=St_ehwq5RnS_WxI_BT9l9w&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Hannah Bello, 12th Grader
+                    </p>
+                    <p class="song-title">"Dahan-Dahan"<br>ni Lola Amour</p>
+                    <p class="interview-info">
+                        -	"This is my go-to song and the song that I won't get tired of listening to aside from Tadhana by Up Dharma Down. This song fully and freely captures the beauty, pain and the vulnerability of the person in opening up again and in giving second chances." <br>
+                        <span style="color:var(--color-grey-text-highlight); font-size: 18px;">"Eto na naman tayo <br>
+                        Umiindak muli <br>
+                        Sa saliw ng buhay <br>
+                        Nating laging sumasandali <br>
+                        Dahan-dahan, unti-unti <br>
+                        Lumuluwag ang mga tahi <br>
+                        Humiga, magpainit, bumabaga? Yakapin <br>
+                        Pakinggan ang pagtibok, ngunit lahat kikimkimin <br>
+                        'Wag nang ulitin, ulit-ulitin" <br>
+                        </span>
+                        -	"The first time I listened to this part, I immediately thought about love and romance, but the more that I listened to it as I grew older, all the more that I realize that it was not just about love;rather, it is also about the pain of accepting the truth of giving yourself a second chance in life with an experience that had caused you real pain. The doubt you would feel for trying again, but the happiness you wanted to reach once you succeeded resonated with me the most. And that is why this is my favorite song."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Gleizie Fernández.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/0JO9VhYHF6EI0KSw9xLI6A?si=jjjJpapiQy2iiRlTFVuJTQ&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Gleizie Fernandez, 12th Grader
+                    </p>
+                    <p class="song-title">"Tahanan"<br>ni El Manu</p>
+                    <p class="interview-info">
+                        -	"My favorite OPM song is “Tahanan” by El Manu. I like it because the song feels very comforting and sincere. Parang it reminds me of having a person or a place where you can feel safe, understood, and at peace. I also really like how simple but meaningful the lyrics are, 
+                        kaya madaling maka-relate and it gives me a comforting feeling whenever I listen to it."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Calle Moya.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/29eiVZ3R6iJcXB01dOAl6H?si=iUv5k8S8T8K4mcdKtPHZ8g&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Callie Moya, 12th Grader
+                    </p>
+                    <p class="song-title">"Waltz of Four Left Feet"<br>ng Shirebound</p>
+                    <p class="interview-info">
+                        -	"As an avid enjoyer of OPM, this question is quite difficult to answer, but if I really had to choose one out of hundreds in my playlist, it would be Waltz of Four Left Feet by Shirebound. <br><br>
+
+                        Beyond its use of a simple, calming progression and gradual buildup, what I really love most about this song would be how, despite its seemingly romantic premise, its lyrics can actually resonate with experiences far beyond love. The line, “Sapat na sa ’kin ang ganito, ang pagmasdan ka sa malayo,” particularly speaks to me. Shirebound was able to put into words the feeling of having to admire something from a distance because, for one reason or another, you can no longer reach for it. For me, that something pertains to a dream, an opportunity, or even a version of my 
+                        future that I once imagined for myself. Every time I listen to this song—aside from making me cry buckets—it reminds me of the things I have had to let go of and the painful realization that sometimes, no matter how much we want something, we have to learn to be content with simply knowing that it once meant something to us. <br><br>
+
+                        It beautifully captures the bittersweet process of accepting that some things are meant to be cherished, even if they are no longer ours. That is why this song will never cease to move me and will forever remain my all-time favorite, no matter how many times I hear it.
+                        "
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Andrea Tumamao.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4z928BtE4j1bjhcX9RU44M?si=Z7S85ywAQweV_n2ehHPrVA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Andrea Tumamao, 12th Grader
+                    </p>
+                    <p class="song-title">"Kabisado"<br>ng IV of Spades</p>
+                    <p class="interview-info">
+                        -	"'Kabisado' by IV of Spades centers on the beauty of familiarity. In life, it takes true dedication to notice someone past their physical looks, all the way down to their smallest mannerisms. I chose this song because it mirrors the attentive, quiet love I value most. Memorizing someone's habits, silence, and quirks isn't an accident; it is an active daily choice. Ultimately, "Kabisado" shows that genuine connection goes beyond dramatic romantic gestures—it lives in the daily effort to truly know, value, and understand another person."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Karl Torre.jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/61vyXXtY7OSYFRtSzv5ehw?si=SObwWpyVTxG3Uv90mjDEnA&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Karl Torre, 12th Grader
+                    </p>
+                    <p class="song-title">"Mundo"<br>ng IV of Spades</p>
+                    <p class="interview-info">
+                        -	"The reason why I really like Mundo by IV of Spades (IVOS) is because for almost 4 years of listening to this song, I still come back to it to relieve stress from problems I have; the melody and tone just make me calm myself, but usually because it's the first song I learned fully on the guitar and because of how much of a banger the song really it is, from its smooth, calm intro, voices, rocking solo, and bass drop that will make you really sing and headbang to it."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Charles Lima.jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4Th9JXlrIIOMk3kA9Wm2lq?si=B3Wnt1hmRVGbICXlHvSaQA&utm_source=copy-link " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Charles Lima, 12th Grader
+                    </p>
+                    <p class="song-title">"Peksman"<br>ng Siakol</p>
+                    <p class="interview-info">
+                        -	"The melody is very catchy, especially the chorus. The words used are easy to remember and have a great rhyming or rhyme scheme which makes it easier for the listener to guess what the next word is. As for the instruments, it's composed of vocals, bass, 2 guitars, and drums which is easy to jam with a band especially because the musical composition and the chord progressions are simple and easy to follow. The meaning of the song gives emphasis to a stupid love and willingness to maintain a good relationship by doing favorable things that the girl wants. Here the guy is willing to do what it takes just to make the girl not leave him or fall out of love; it uses Filipino street words which can be relatable and good to sing with friends who can relate to its meaning. Overall, the song is very catchy, has a great meaning, and a great rhyming or rhyme scheme which contributes in becoming the most recognized song in the streets of the Philippines."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Keito Pagkaliwangan .jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4cBm8rv2B5BJWU2pDaHVbF?si=GfbXQMIlQ824Bl0N61DdBg&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Keito Pagkaliwangan, 12th Grader
+                    </p>
+                    <p class="song-title">"Burnout"<br>ng Sugarfree</p>
+                    <p class="interview-info">
+                        -	"'Burnout' is a song about feeling tired, hurt, and confused with love and relationships I enjoy the song because its relaxing to listen and the message it shows is calm and relaxing, while the lyrics express feelings that are complicated to express to someone."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Ms. Grace Adan.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/2VjqZHM9qZaXRooxAwZfHm?si=137Mu_KeSjeeaJ-YHgVHLw&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Ms. Grace Adan, Faculty
+                    </p>
+                    <p class="song-title">"Ako Naman"<br>ni Angela Ken</p>
+                    <p class="interview-info">
+                        -	"This song means so much to me because, for once, it reminds me that I’m allowed to choose myself, too. As someone struggling with my mental health and as the eldest daughter, I’m constantly trying to balance my career, my family, and the responsibility of healing myself. Sometimes, I just need to pause and say, “Ako naman muna.” Not because I love them any less, but because I’m learning that I deserve care, too."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Ms. Teresa Magtoto.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/2NP0WCHeIjBi3oC7MruePl?si=Fx9VDqUdRNmuXTVHaVplfA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Ms. Teresa Magtoto, Faculty
+                    </p>
+                    <p class="song-title">"Autumn" and "Lifetime"<br>ng Ben&Ben</p>
+                    <p class="interview-info">
+                        -	"I love these songs because they remind me of someone I loved and the kind of love that feels genuine, comforting, and worth holding on to. The songs have a certain warmth that makes me think of special moments and feelings that are hard to put into words. 💚"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Ms. Erica Cajayon.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6wdCelHrPh7UfliNjwRTUv?si=TTyYw94yREqPa9Gtt6mRgQ " target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Ms. Erica Cajayon, Faculty
+                    </p>
+                    <p class="song-title">"Leaves"<br>ng Ben&Ben</p>
+                    <p class="interview-info">
+                        -	"This song reminds me that when life doesn't go the way I wanted, one day, everything will fall into place."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Mr. Iyan Ehurango.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/0DgmFkzTdM3hpH2WgheJ4b?si=8Y0kvkEjQ66FF3ndb2bO8w&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Mr. Iyan Ehurango, Faculty
+                    </p>
+                    <p class="song-title">"Kay Tagal Kitang Hinihintay"<br>ng Sponge Cola</p>
+                    <p class="interview-info">
+                        -	"Ang Favorite OPM song ko ay "Kay tagal kitang hinintay" by Sponge cola. Kasi Dito kami nagsimula ng ex-girlfriend ko na ngayon ay asawa ko na at nanay ng nag iisang anak ko. Yun yung una sa mga playlist ko at laging pinapakinggan lalo na sa tuwing iniintay ko siya sa Jollibee at Imart kung saan siya nagwowork. At may part don na " Tapos na ang pag hihintay nandito ka na" natapos na yung ilang Oras na paghihintay ko Araw Araw at eventually, sabay kami lumakad sa altar. Ay sorry nagkwento hahahaha why lang pala. Pero ayun, mula non feeling ko Ang Ganda ng boses ko pag kinakanta ko yon😅🤣🤣🤣 or Feeling ko lang? HAHHA"
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Mr. Sondel Palaña.JPG" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/5Nc8J2Ie4eXi7l12C083GD?si=ygBEGmKWQ2K8yCd6x7gemQ&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Mr. Sondel Palaña, Faculty
+                    </p>
+                    <p class="song-title">"hayy"<br>ng blaster</p>
+                    <p class="interview-info">
+                        -	"A gentle reminder for us to live our lives beyond the unnecessary expectations of society. We don’t always have to conform to what others expect of us because, in our own ways, we are already enough and beautiful."
+                    </p>
+                </div>
+            </div>
+
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Mira Reyes.jpg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/6wdCelHrPh7UfliNjwRTUv?si=TTyYw94yREqPa9Gtt6mRgQ" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Ms. Mira Reyes, Faculty
+                    </p>
+                    <p class="song-title">"Leaves"<br>ng Ben&Ben</p>
+                    <p class="interview-info">
+                        -	"Current fave is Leaves by Ben and Ben. I like the melody and the message - about healing and comfort.. sabi nga sa song yun mga challenges and dark moments lilipas din yun, tsaka the song tells us na its ok to sometimes feel sadness. 🫰🏼"
+                    </p>
+                </div>
+            </div>
+            <div class="song-icon">
+                <button class="info-open" onclick="togglePerson(this)">
+                    <img class="song-image" src="spotifi assets/SPOTI-FY PICS/Ms. Denise Gernale.jpeg" alt="placeholder">
+                </button>
+                <a class="song-play-button" href="https://open.spotify.com/track/4mOjjXKDOR1sel6APULUaN?si=ZqKALbkBQpqzS3upgHIacA&utm_source=copy-link" target="_blank">
+                    <img class="play-button" src="spotifi assets/play-button.png" alt="Show!">
+                </a> 
+                <div class="song-info">
+                    <p class="interview-info" style="font-size: 18px; text-align: center; color: var(--color-grey-text-highlight);">
+                        Ms. Denise Gernale, Faculty
+                    </p>
+                    <p class="song-title">"Huwag na Huwag Mong Sasabihin"<br>ni Kitchie Nadal</p>
+                    <p class="interview-info">
+                        -	"Kapag kasi sinabing OPM, di lang siya basta isang genre lang ng kanta eh. Pwede ring samu't sari mula sa kantang mapapaindak ka, maiinlab ka, matutuwa ka, at malulungkot ka. Madami.<br><br>
+
+                            Pero para sagutin ang tanong, isa sa mga ultimate pinabalik balikan at paborito kong OPM kahit ano pang pinagdadaanan ko ay Huwag na Huwag Mong Sasabihin ni Kitchie Nadal. Bilang isang lumaki sa mga tita, isa yan sa palaging pinapatugtog ng mga tita ko noon na hanggang ngayon pinapakinggan ko at minsan kinakanta ko sa videoke. 
+                            "
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="decorative-hills">
+            <img id="curve1" src="spotifi assets/curve1.png" alt="">
+            <img id="curve2" src="spotifi assets/curve2.png" alt="">
+            <img id="curve3" src="spotifi assets/curve3.png" alt="">
+            <img id="curve4" src="spotifi assets/curve4.png" alt="">
+        </div>
+        
+    </main>
+
+    <footer class="desktop-footer">
+
+        <div class="footer-top" style="margin-bottom:-50px;">
+            <img src="netfilix assets/desktop-footer-logos.png" alt="Logos" style="transform: translate(-20px, 5px);">
+            <p>THE LASALLIAN RHEIMS</p>
+            <img src="netfilix assets/footer-icons.png" alt="Icons" style="transform: translateY(-5px)">
+        </div>
+
+        <div class="footer-bottom">
+            <img style="margin: 0;" src="netfilix assets/line3.png" alt="">
+            <p>
+                <img src="netfilix assets/mail.png" alt="">
+                info@rheims.net
+            </p>
+            <p style="margin-top: -15px;">
+                <img src="netfilix assets/phone.png" alt="">
+                0920 426 5779
+            </p>
+            <img style="margin: 0; margin-bottom: 20px;" src="netfilix assets/line4.png" alt="">
+            <p style="font-weight: 400;">
+                Academy of Saint John - La Salle Greenhills and 
+                De La Salle Santiago Zobel Partner School
+            </p>   
+            <p style="font-weight:400; font-size: 19.89px; margin-top: -10px;"> 
+                Brgy. Sta. Clara, City of General Trias
+            </p>
+
+            <!-- Centered Star Line -->
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px; margin: 10px 0;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+                <img src="netfilix assets/low-star.png" alt="" style="margin: 0 10px; width: 34.81px; height: 34.81px;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+            </div>
+
+            <p style="font-size: 19.89px; font-weight:400; margin-top: -10px;">
+                © The Lasallian Rheims. All Rights Reserved.
+            </p> 
+
+            <!-- Decorative Bottom Line -->
+            <div class="fancy-corner-line">
+                <div class="corner-left">
+                    <div class="corner-left-box"></div>
+                    <div class="corner-left-line"></div>
+                </div>
+                <div class="center-line"></div>
+                <div class="corner-right">
+                    <div class="corner-right-box"></div>
+                    <div class="corner-right-line"></div>
+                </div>
+            </div>
+       </div>
+
+       <div class="bottom-bar"></div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
+  <g fill="none" stroke="#20D867" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- stems and beam -->
+    <path d="M60 146 V49 L150 26 V125"></path>
+
+    <!-- noteheads -->
+    <circle cx="41" cy="146" r="20"></circle>
+    <circle cx="130" cy="125" r="20"></circle>
+  </g>
+</svg>
