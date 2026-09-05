@@ -197,7 +197,7 @@ button {
 
 .movie-cards {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 75px;
     width: min(100%, 1280px);
     margin: 150px auto 0;
@@ -209,8 +209,7 @@ button {
 
 .movie-cards img {
     display: block;
-    width: min(100%, 619px);
-    height: 348px;
+    width: 348px;
     object-fit: cover;
     border-radius: 16px;
 }
