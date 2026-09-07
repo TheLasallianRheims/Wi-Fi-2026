@@ -1,1 +1,184 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahanan</title>
+    
+    <script>
+        // Check if screen width is 768px or smaller
+        if (window.innerWidth <= 768) {
+        // Redirect to mobile-specific HTML file
+            window.location.href = "index-mobile.html";
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="assets/logo.png" alt="Wi-Fi Logo">
+        </a>
+        <nav class="nav-buttons">
+            <a class="nav-button" href="index.html">Tahanan</a>
+            <a class="nav-button" href="netfilix.html">Netfi-lix</a>
+            <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
+            <a class="nav-button" href="#">Spoti-Fi</a>
+            <a class="nav-button" href="#">GrabE!</a>
+            <a class="nav-button" href="pinoystagram.html">Pinoystagram</a>
+            <a class="nav-button" href="abawt.html">Abawt</a>
+            <a class="nav-button" href="nakaraan.html">Nakaraan</a>
+        </nav>
+        <button>
+            <img src="assets/wifipedia assets/search2.png" alt="Search">
+        </button>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-title-small">Konek na sa</div>
+                <div class="hero-title-large">WI-<span>Fi</span></div>
+                <img class="hero-subtitle-image" src="assets/tahanan assets/Group 19.png" alt="Wikang Filipino">
+                
+                <div class="hero-description">
+                    Isang pagdiriwang ng wika, kultura,<br>at pagkakakilanlan.<br>
+                    Ito'y isang koneksyon ng nakaraan, kasalukuyan,<br>
+                    at hinaharap tungo sa mas-malikhaing<br>Pilipinas.
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-primary">Tuklasin Natin!</button>
+                    <button class="btn btn-secondary">Panoorin</button>
+                </div>
+            </div>
+            
+            <!-- Custom Geometric Graphics -->
+            <div class="hero-graphics">
+                <!-- Sun -->
+                <img class="sun-svg" src="assets/tahanan assets/sun.png" alt="">
+
+                <!-- Layered Mountains -->
+
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="text-card">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <section class="apps-section">
+            <div class="section-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary-gold)"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+                TUKLASIN ANG AMING POOK-SAPOT!
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary-gold)"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+            </div>
+            
+            <div class="apps-grid">
+                <!-- Spoti-Fi -->
+                <div class="app-card spoti-fi">
+                    <span class="app-name">SPOTI-FI</span>
+                    <div class="app-icon" style="background:var(--card-green)"></div>
+                    <button class="btn-app">TUKLASIN</button>
+                </div>
+                <!-- Shop-Fi -->
+                <div class="app-card shop-fi">
+                    <span class="app-name">SHOP-FI</span>
+                    <div class="app-icon" style="background:var(--card-orange)"></div>
+                    <button class="btn-app">TUKLASIN</button>
+                </div>
+                <!-- Netfi-lix -->
+                <div class="app-card netfi-lix">
+                    <span class="app-name">NETFI-LIX</span>
+                    <div class="app-icon" style="background:var(--card-red)"></div>
+                    <button class="btn-app">TUKLASIN</button>
+                </div>
+                <!-- Wi-Fipedia -->
+                <div class="app-card wi-fipedia">
+                    <span class="app-name">WI-FIPEDIA</span>
+                    <div class="app-icon" style="background:var(--card-grey)"></div>
+                    <button class="btn-app">TUKLASIN</button>
+                </div>
+                <!-- Pinoystagram -->
+                <div class="app-card pinoystagram">
+                    <span class="app-name">PINOYSTAGRAM</span>
+                    <div class="app-icon" style="background:var(--card-pink)"></div>
+                    <button class="btn-app">TUKLASIN</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+    <footer class="desktop-footer">
+
+        <div class="footer-top" style="margin-bottom:-50px;">
+            <img src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos" style="transform: translate(-20px, 5px);">
+            <p>THE LASALLIAN RHEIMS</p>
+            <img src="assets/netfilix assets/footer-icons.png" alt="Icons" style="transform: translateY(-5px)">
+        </div>
+
+        <div class="footer-bottom">
+            <img style="margin: 0;" src="assets/wifipedia assets/line3.png" alt="">
+            <p>
+                <img src="assets/netfilix assets/mail.png" alt="">
+                info@rheims.net
+            </p>
+            <p style="margin-top: -15px;">
+                <img src="assets/netfilix assets/phone.png" alt="">
+                0920 426 5779
+            </p>
+            <img style="margin: 0; margin-bottom: 20px;" src="assets/wifipedia assets/line4.png" alt="">
+            <p style="font-weight: 400;">
+                Academy of Saint John - La Salle Greenhills and 
+                De La Salle Santiago Zobel Partner School
+            </p>   
+            <p style="font-weight:400; font-size: 19.89px; margin-top: -10px;"> 
+                Brgy. Sta. Clara, City of General Trias
+            </p>
+
+            <!-- Centered Star Line -->
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px; margin: 10px 0;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+                <img src="assets/netfilix assets/low-star.png" alt="" style="margin: 0 10px; width: 34.81px; height: 34.81px;">
+                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+            </div>
+
+            <p style="font-size: 19.89px; font-weight:400; margin-top: -10px;">
+                © The Lasallian Rheims. All Rights Reserved.
+            </p> 
+
+            <!-- Decorative Bottom Line -->
+            <div class="fancy-corner-line">
+                <div class="corner-left">
+                    <div class="corner-left-box"></div>
+                    <div class="corner-left-line"></div>
+                </div>
+                <div class="center-line"></div>
+                <div class="corner-right">
+                    <div class="corner-right-box"></div>
+                    <div class="corner-right-line"></div>
+                </div>
+            </div>
+       </div>
+
+       <div class="bottom-bar"></div>
+
+    </footer>
+</body>
+</html>
