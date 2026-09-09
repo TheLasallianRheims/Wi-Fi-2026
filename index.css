@@ -62,7 +62,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--primary-cream);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     color: var(--text-dark);
 }
 
