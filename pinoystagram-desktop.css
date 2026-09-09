@@ -435,6 +435,33 @@ button {
     pointer-events: none;
     z-index: 5;
 }
+
+.bottom-middle-star {
+    position: absolute;
+    left: 1150px;
+    top: 900px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.bottom-right-ellipse {
+    position: absolute;
+    left: 1800px;
+    top: 900px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.bottom-right-ellipse img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .middle-right-ellipse {
     position: absolute;
     left: 1870px;
