@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tahanan</title>
+
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
     
     <script>
         // Check if screen width is 768px or smaller
         if (window.innerWidth <= 768) {
         // Redirect to mobile-specific HTML file
-            window.location.href = "index-mobile.html";
+            window.location.href = "netfilix-mobile.html";
+        }
+
+        // Opens and closes the info when the button is clicked
+        function togglePerson(button) {
+        const song = button.closest(".song-icon");
+        const info = song.querySelector(".song-info");
+        info.classList.toggle("open");
         }
     </script>
 
@@ -34,24 +43,30 @@
             <a class="nav-button" href="index.html">Tahanan</a>
             <a class="nav-button" href="netfilix.html">Netfi-lix</a>
             <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
-            <a class="nav-button" href="#">Spoti-Fi</a>
+            <a class="nav-button" href="spotifi.html">Spoti-Fi</a>
             <a class="nav-button" href="#">GrabE!</a>
             <a class="nav-button" href="pinoystagram.html">Pinoystagram</a>
             <a class="nav-button" href="abawt.html">Abawt</a>
             <a class="nav-button" href="nakaraan.html">Nakaraan</a>
         </nav>
         <button>
-            <img src="assets/wifipedia assets/search2.png" alt="Search">
+            <img src="assets/search.png" alt="Search">
         </button>
     </header>
 
 
     <!-- Main Content -->
-    <main>
-        <section class="hero-section">
+    <section class="netfilix-landing">
+
+            </div>
+        </section>
+        <section class="tahanan-landing">
             <div class="hero-content">
                 <div class="hero-title-small">Konek na sa</div>
-                <div class="hero-title-large">WI-<span>Fi</span></div>
+                <div class="hero-title-large">
+                    <img src="assets/tahanan assets/WI-.png" alt="hero-title-large">
+                    <img src="assets/tahanan assets/Fi.png" alt="hero-title-large">
+                </div>
                 <img class="hero-subtitle-image" src="assets/tahanan assets/Group 19.png" alt="Wikang Filipino">
                 
                 <div class="hero-description">
@@ -65,16 +80,8 @@
                     <button class="btn btn-secondary">Panoorin</button>
                 </div>
             </div>
-            
-            <!-- Custom Geometric Graphics -->
-            <div class="hero-graphics">
-                <!-- Sun -->
-                <img class="sun-svg" src="assets/tahanan assets/sun.png" alt="">
+            </section>
 
-                <!-- Layered Mountains -->
-
-            </div>
-        </section>
 
         <section class="content-section">
             <div class="text-card">
@@ -125,7 +132,7 @@
         </section>
 
         <!-- Footer -->
-    <footer class="desktop-footer">
+<footer class="desktop-footer">
 
         <div class="footer-top" style="margin-bottom:-50px;">
             <img src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos" style="transform: translate(-20px, 5px);">
@@ -180,5 +187,6 @@
        <div class="bottom-bar"></div>
 
     </footer>
+
 </body>
 </html>
