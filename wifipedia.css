@@ -12,6 +12,15 @@
     --color-star-line: #D34511;
 }
 
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes headerColorChange {
     from {
     background-color: transparent;

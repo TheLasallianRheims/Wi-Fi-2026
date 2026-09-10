@@ -21,6 +21,15 @@
     --color-star-line: #D34511;
 }
 
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
     margin: 0;
