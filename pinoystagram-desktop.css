@@ -425,7 +425,34 @@ button {
     pointer-events: none;
     z-index: 0;
 }
+.bottom-left-shape{
+    position: absolute;
+    left: 100px;
+    top: 900px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
 
+.bottom-left-shape-2{
+    position: absolute;
+    left: 200px;
+    top: 900px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
+.bottom-left-shape-3{
+    position: absolute;
+    left: 1px;
+    top: 750px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
 .middle-right-star {
     position: absolute;
     left: 1730px;
