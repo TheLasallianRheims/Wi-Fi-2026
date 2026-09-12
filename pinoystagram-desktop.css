@@ -71,9 +71,6 @@ body {
     left: 0;
     z-index: 1000;
     background-color: transparent;
-    animation: headerColorChange linear forwards;
-    animation-timeline: scroll();
-    animation-range: 0px 100svh;
     width: 100%;
 }
 
@@ -409,6 +406,7 @@ button {
 .bottom-right-shape,
 .bottom-right-shape-2,
 .bottom-right-shape-3,
+.bottom-right-shape-4,
 .bottom-left-shape,
 .bottom-left-shape-2,
 .bottom-left-shape-3,
@@ -424,21 +422,27 @@ button {
 }
 
 .bottom-right-shape {
-    right: -15vw;
+    right: -12vw;
     bottom: -20vh;
     z-index: 1;
 }
 
 .bottom-right-shape-2 {
-    right: -2vw;
-    bottom: -5vh;
+    right: 0vw;
+    bottom: -4vh;
     z-index: 2;
 }
 
 .bottom-right-shape-3 {
-    right: -2vw;
+    right: -1.4vw;
     bottom: -1vh;
     z-index: 3;
+}
+
+.bottom-right-shape-4 {
+    right: -1vw;
+    bottom: -1vh;
+    z-index: 5;
 }
 
 .bottom-left-shape{
@@ -471,7 +475,7 @@ button {
 
 .bottom-right-ellipse {
     right: 4vw;
-    bottom: 28vh;
+    bottom: 20vh;
     z-index: 4;
 }
 
@@ -481,8 +485,8 @@ button {
 }
 
 .bottom-right-star {    
-    right: 25vw;
-    bottom: 10vh;
+    right: 13vw;
+    bottom: 7vh;
     z-index: 2;
 } 
 
