@@ -227,6 +227,15 @@ button {
     transform: scale(1.02);
 }
 
+.movie-cards:nth-last-child(2) {
+    grid-column: 1 / 2;
+    margin-left: 50%;
+}
+
+.movie-cards:last-child {
+    grid-column: 2 / 3;
+}
+
 .desktop-footer {
     background-color: var(--color-pure-white);
     width: 100%;
