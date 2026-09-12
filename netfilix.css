@@ -87,12 +87,23 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: -50px;
-    transform: translateX(-50px);
 }
 
 .netfilix-logo {
-    width: 387px;
-    height: 411px;
+    width: 120px;
+    height: 230px;
+    flex: 0 0 150px;
+    overflow: hidden;
+    transform: translateY(-20px);
+}
+
+.netfilix-logo img {
+    display: block;
+    width: 230px;
+    height: 230px;
+    max-width: none;
+    object-fit: contain;
+    transform: translate(-40px, 15px);
 }
 
 .netfilix-text {
@@ -100,7 +111,6 @@ body {
     font-weight: 700;
     font-size: 204.86px;
     color: var(--color-netfilix-text);
-    margin-left: -130px;
 }
 
 .netfilix-subtext {
@@ -108,7 +118,7 @@ body {
     font-weight: 500;
     font-size: 40px;
     color: var(--color-pure-white);
-    margin-top: -40px;
+    margin-top: 40px;
 }
 
 .netfilix-title p,
@@ -227,13 +237,26 @@ button {
     transform: scale(1.02);
 }
 
-.movie-cards:nth-last-child(2) {
-    grid-column: 1 / 2;
-    margin-left: 50%;
+.movie-cards-last {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 75px;
+    width: min(100%, 1280px);
+    margin: 150px auto 0;
+    z-index: 2;
+    box-sizing: border-box;
+    margin-top: 40px;
 }
 
-.movie-cards:last-child {
-    grid-column: 2 / 3;
+.movie-cards-last img {
+    display: block;
+    width: 348px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+#movie13 {
+    justify-self: end;
 }
 
 .desktop-footer {
