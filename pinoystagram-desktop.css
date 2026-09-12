@@ -441,21 +441,31 @@ button {
 }
 
 .bottom-left-shape{
-    left: -0vw;
-    bottom: -1vh;
+    left: 0vw;
+    bottom: -2vh;
     z-index: 3;
 }
 
 .bottom-left-shape-2{
+    left: 0vw;
+    bottom: -2vh;
+    z-index: 2;
 }
 
 .bottom-left-shape-3{
+    left: 0vw;
+    bottom: -1vh;
+    z-index: 1;
 }
 
 .middle-right-star {
+    right: 10vw;
+    bottom: 64vh;
 }
 
 .bottom-middle-star {
+    right: 30vw;
+    bottom: 16vh;
 }
 
 .bottom-right-ellipse {
@@ -464,8 +474,11 @@ button {
 .middle-right-ellipse {
 }
 
-.bottom-right-star {
-} */
+.bottom-right-star {    
+    right: 21vw;
+    bottom: 10vh;
+    z-index: 2;
+} 
 
 
 
