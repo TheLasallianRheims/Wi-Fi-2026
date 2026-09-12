@@ -406,126 +406,68 @@ button {
     color: #6F2AC3;
 }
 
-.bottom-right-shape {
+.bottom-right-shape,
+.bottom-right-shape-2,
+.bottom-right-shape-3,
+.bottom-left-shape,
+.bottom-left-shape-2,
+.bottom-left-shape-3,
+.middle-right-star,
+.bottom-middle-star,
+.bottom-right-ellipse,
+.middle-right-ellipse,
+.bottom-right-star {
     position: absolute;
-    left: 1570px;
-    top: 700px;
-    width: auto;
-    height: auto;
     pointer-events: none;
     z-index: 0;
+}
+
+.bottom-right-shape {
+    right: -15vw;
+    bottom: -20vh;
+    z-index: 1;
 }
 
 .bottom-right-shape-2 {
-    position: absolute;
-    left: 1700px;
-    top: 800px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 0;
+    right: -2vw;
+    bottom: -5vh;
+    z-index: 2;
 }
+
+.bottom-right-shape-3 {
+    right: -2vw;
+    bottom: -1vh;
+    z-index: 3;
+}
+
 .bottom-left-shape{
-    position: absolute;
-    left: 100px;
-    top: 900px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 0;
+    left: -0vw;
+    bottom: -1vh;
+    z-index: 3;
 }
 
 .bottom-left-shape-2{
-    position: absolute;
-    left: 200px;
-    top: 900px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 0;
 }
+
 .bottom-left-shape-3{
-    position: absolute;
-    left: 1px;
-    top: 750px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 0;
 }
+
 .middle-right-star {
-    position: absolute;
-    left: 1730px;
-    top: 700px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 5;
 }
 
 .bottom-middle-star {
-    position: absolute;
-    left: 1150px;
-    top: 900px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 5;
 }
 
 .bottom-right-ellipse {
-    position: absolute;
-    left: 1800px;
-    top: 900px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 5;
-}
-
-.bottom-right-ellipse img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .middle-right-ellipse {
-    position: absolute;
-    left: 1870px;
-    top: 550px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 5;
-}
-
-.middle-right-ellipse img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.middle-right-star img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .bottom-right-star {
-    position: absolute;
-    left: 1575px;
-    top: 973px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    z-index: 5;
-}
+} */
 
-.bottom-right-star img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 
 
 #main {
