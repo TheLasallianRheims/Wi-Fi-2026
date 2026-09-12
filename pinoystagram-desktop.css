@@ -416,7 +416,8 @@ button {
 .bottom-middle-star,
 .bottom-right-ellipse,
 .middle-right-ellipse,
-.bottom-right-star {
+.bottom-right-star,
+.bottom-left-star{
     position: absolute;
     pointer-events: none;
     z-index: 0;
@@ -469,19 +470,27 @@ button {
 }
 
 .bottom-right-ellipse {
+    right: 4vw;
+    bottom: 28vh;
+    z-index: 4;
 }
 
 .middle-right-ellipse {
+    right: 3vw;
+    bottom: 87vh;
 }
 
 .bottom-right-star {    
-    right: 21vw;
+    right: 25vw;
     bottom: 10vh;
     z-index: 2;
 } 
 
-
-
+.bottom-left-star {
+    left: 40vw;
+    bottom: 4vh;
+    z-index: 5;
+}
 
 #main {
     margin: 24px 0 24px 0;
