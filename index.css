@@ -1,3 +1,12 @@
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
         :root {
             /* Required Palette */
             --primary-brown: #895129;
@@ -211,7 +220,7 @@ button {
 }
 
 .btn-secondary {
-    background-color: transparent;
+    background-color: #FFEBAF;
     color: var(--primary-brown);
     border: 2px solid var(--primary-brown);
     font-size: 18px;
@@ -230,39 +239,165 @@ button {
     padding: 0;
 }
 
+/* decos front content */
+.sun img {
+    position: absolute;
+    display: block;
+    top: 110px;
+    right: 450px;
+    width: 16%;
+    height: 38%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 29%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape2 {
+    position: absolute;
+    top: 255px;
+    right: -5px;
+    width: 10.5%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape3 {
+    position: absolute;
+    top: 288px;
+    right: 0;
+    width: 35.75%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape4 {
+    position: absolute;
+    top: 440px;
+    right: 0;
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape5 {
+    position: absolute;
+    top: 420px;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape6 {
+    position: absolute;
+    top: 420px;
+    right: 0;
+    width: 39%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.lineshape {
+    position: absolute;
+    top: 650px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2, 1); 
+    z-index: 0;
+}
+
+.lineshape2 {
+    position: absolute;
+    top: 690px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2, 1); 
+    z-index: 0;
+}
+
+.rectangle {
+    position: absolute;
+    top: 540px;
+    right: 0;
+    width: 63%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.4, 1.2); 
+    z-index: 0;
+}
+
+.rectangle2 {
+    position: absolute;
+    top: 500px;
+    right: 0;
+    width: 64%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2, 1.2); 
+    z-index: 0;
+}
+
 /* --- Content Section --- */
 .content-section {
     padding: 0 40px 60px;
+    background-color: #FFECB5;
     position: relative;
-    z-index: 5;
+    z-index: 10;
 }
 
 .text-card {
-    background-color: #ffda6c;
-    border: 2px solid var(--primary-gold);
+    background-color: transparent;
     border-radius: 20px;
-    padding: 30px;
+    padding: 90px;
     position: relative;
     z-index: 5;
     min-height: 150px;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.text-card img {
+    position: absolute;
+    display: block;
+    top: -1%;
+    right: -6.5%;
+    width: 113%;
+    height: auto;
+    z-index: 0;
+}
+
 .text-card .text-content {
-    background-color: #FFFFFF;
     border-radius: 10px;
     padding: 15px 20px;
 }
 
 .text-card p {
-    color: var(--primary-brown);
-    font-size: 14px;
+    color: #603516;
+    font-size: 20px;
     line-height: 1.8;
     margin: 0;
+    padding: 50px;
     text-align: center;
     font-weight: 500;
 }
@@ -276,6 +411,7 @@ button {
     border-top: 1px solid rgba(204, 153, 0, 0.3);
     border-bottom: 1px solid rgba(204, 153, 0, 0.3);
     background-color: #FFF3D2;
+    z-index: 10;
 }
 
 .section-title {
