@@ -1,3 +1,12 @@
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
         :root {
             /* Required Palette */
             --primary-brown: #895129;
@@ -127,6 +136,96 @@ button {
     margin-top: 18px;
 }
 
+/* --- Hero Section --- */
+.tahanan-landing {
+    display: grid;
+    grid-template-columns: max-content 220px;
+    justify-content: start;
+    gap: 10px;
+    align-items: flex-end;
+    padding: 20px 40px 60px;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title-small {
+    color: var(--primary-brown);
+    font-weight: 800;
+    width: 50%;
+    margin-bottom: -30px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.hero-title-large {
+    display: flex;
+    gap: 20px;
+    line-height: 1.1;
+    margin-bottom: -70px;
+    margin-left: 9px;
+    letter-spacing: 2px;
+}
+
+.hero-subtitle-image {
+    width: 550px;
+    height: auto;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary-brown);
+    line-height: 1.6;
+    margin-top: 9px;
+    margin-bottom: 0px;
+    max-width: 450px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 70%;
+    z-index: 10;
+    margin-bottom: 14px;
+}
+
+.btn {
+    width: 50%;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--primary-brown);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-secondary {
+    background-color: #FFEBAF;
+    color: var(--primary-brown);
+    border: 2px solid var(--primary-brown);
+    font-size: 18px;
+}
+
 .desktop-footer {
     background-color: var(--color-pure-white);
     width: 100%;
@@ -139,6 +238,235 @@ button {
     margin: 0;
     padding: 0;
 }
+
+/* decos front content */
+.sun img {
+    position: absolute;
+    display: block;
+    top: 110px;
+    right: 450px;
+    width: 16%;
+    height: 38%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 29%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape2 {
+    position: absolute;
+    top: 255px;
+    right: -5px;
+    width: 10.5%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape3 {
+    position: absolute;
+    top: 288px;
+    right: 0;
+    width: 35.75%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape4 {
+    position: absolute;
+    top: 440px;
+    right: 0;
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape5 {
+    position: absolute;
+    top: 420px;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.trishape6 {
+    position: absolute;
+    top: 420px;
+    right: 0;
+    width: 39%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.lineshape {
+    position: absolute;
+    top: 650px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2, 1); 
+    z-index: 0;
+}
+
+.lineshape2 {
+    position: absolute;
+    top: 690px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2, 1); 
+    z-index: 0;
+}
+
+.rectangle {
+    position: absolute;
+    top: 540px;
+    right: 0;
+    width: 63%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.4, 1.2); 
+    z-index: 0;
+}
+
+.rectangle2 {
+    position: absolute;
+    top: 500px;
+    right: 0;
+    width: 64%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2, 1.2); 
+    z-index: 0;
+}
+
+/* --- Content Section --- */
+.content-section {
+    padding: 0 40px 60px;
+    background-color: #FFECB5;
+    position: relative;
+    z-index: 10;
+}
+
+.text-card {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 90px;
+    position: relative;
+    z-index: 5;
+    min-height: 150px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-card img {
+    position: absolute;
+    display: block;
+    top: -1%;
+    right: -6.5%;
+    width: 113%;
+    height: auto;
+    z-index: 0;
+}
+
+.text-card .text-content {
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.text-card p {
+    color: #603516;
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.text-card p:last-child {
+    margin-bottom: 0;
+}
+
+.apps-section {
+    padding: 40px;
+    border-top: 1px solid rgba(204, 153, 0, 0.3);
+    border-bottom: 1px solid rgba(204, 153, 0, 0.3);
+    background-color: #FFF3D2;
+    z-index: 10;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-brown);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    letter-spacing: 1px;
+}
+
+.apps-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.app-card {
+    width: 150px;
+    height: 190px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    gap: 10px;
+    margin: 0 10px;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+}
+
+.app-name {
+    font-size: 11px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.app-logo {
+    width: 130%;
+    height: 130%;
+    transform: translate(2px, -20px);
+}
+
+/* stop. */
 
 .footer-top {
     display: flex;
