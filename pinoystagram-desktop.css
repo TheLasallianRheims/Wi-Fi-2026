@@ -411,6 +411,7 @@ button {
 .bottom-left-shape,
 .bottom-left-shape-2,
 .bottom-left-shape-3,
+.upper-left-shape,
 .middle-right-star,
 .bottom-middle-star,
 .bottom-right-ellipse,
@@ -461,6 +462,12 @@ button {
 .bottom-left-shape-3{
     left: 0vw;
     bottom: -1vh;
+    z-index: 1;
+}
+
+.upper-left-shape{
+    left: 0vw;
+    top: -1vh;
     z-index: 1;
 }
 
