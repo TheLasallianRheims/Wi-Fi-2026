@@ -239,6 +239,28 @@ button {
     transform: scale(1.02);
 }
 
+.movie-cards-last {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 75px;
+    width: min(100%, 1280px);
+    margin: 150px auto 0;
+    z-index: 2;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.movie-cards-last img {
+    display: block;
+    width: 348px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+#movie13 {
+    justify-self: end;
+}
+
 .desktop-footer {
     background-color: var(--color-pure-white);
     width: 100%;
