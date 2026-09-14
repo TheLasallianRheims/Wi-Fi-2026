@@ -1,65 +1,31 @@
-* {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
+```css
+:root {
+    /* Required Palette */
+    --primary-brown: #895129;
+    --primary-cream: #FFFDD0;
 
-*::-webkit-scrollbar {
-    display: none;
-}
-
-        :root {
-            /* Required Palette */
-            --primary-brown: #895129;
-            --primary-gold: #CC9900;
-            --terracotta: #E2725B;
-            --primary-cream: #FFFDD0;
-            
-            /* Extended App/Brand Colors */
-            --footer-green: #295d32;
-            --card-green: #1db954;
-            --card-orange: #ee4d2d;
-            --card-red: #e50914;
-            --card-grey: #a1a1a1;
-            --card-pink: #c13584;
-            --text-dark: #333333;
-            --color-footer-heading: #12510C;
-
+    /* Extended App/Brand Colors */
+    --text-dark: #333333;
+    --color-footer-heading: #12510C;
     --color-page-background: #E8E8E8;
     --color-surface: #000000;
-    --color-netfilix-text: #B00E0E;
     --color-pure-white: #FFFFFF;
-    --color-main: #3A0505;
-    --color-bottom-main: #050505;
-    --color-subheading: #BA1212;
-    --color-footer-heading: #12510C;
-    --color-heading-line: #C71010;
     --color-accent-gold: #D8A232;
     --color-decorative-brown: #6E3B16;
     --color-bottom-bar: #7C431B;
     --color-star-line: #D34511;
-        }
+}
 
-        /* * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+/* Hide scrollbar but keep functionality */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--primary-cream);
-            display: flex;
-            justify-content: center;
-            color: var(--text-dark);
-        }
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
 
-        .desktop-container {
-            width: 100%;
-            background-color: var(--primary-cream);
-            position: relative;
-            box-shadow: none;
-            overflow-x: hidden;
-        } */
 html {
     scroll-behavior: smooth;
     margin: 0;
@@ -75,6 +41,7 @@ body {
     justify-content: flex-start;
     align-items: stretch;
     color: var(--text-dark);
+    margin: 0;
 }
 
 .home {
@@ -254,7 +221,7 @@ button {
 .trishape {
     position: absolute;
     top: 130px;
-    right: 0;
+    right: -0.5vw;
     width: 29%;
     height: 100%;
     overflow: hidden;
@@ -274,7 +241,7 @@ button {
 .trishape3 {
     position: absolute;
     top: 288px;
-    right: 0;
+    right: -0.5vw;
     width: 35.75%;
     height: 100%;
     overflow: hidden;
@@ -284,7 +251,7 @@ button {
 .trishape4 {
     position: absolute;
     top: 440px;
-    right: 0;
+    right: -0.5vw;
     width: 33%;
     height: 100%;
     overflow: hidden;
