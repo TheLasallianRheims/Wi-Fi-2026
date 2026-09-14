@@ -392,8 +392,16 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 15px;
     letter-spacing: 1px;
+}
+
+.section-title::before {
+    content: '';
+    width: 90vw;
+    height: 3px;
+    background-color: var(--color-accent-gold);
 }
 
 .apps-grid {
