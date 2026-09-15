@@ -1012,28 +1012,27 @@ button {
     color: var(--primary-brown);
     font-size: 18px;
     font-weight: 800;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
     letter-spacing: 1px;
 }
 
 .section-title::before {
     content: '';
-    width: 90vw;
-    height: 3px;
+    width: 94vw;
+    height: 0.3vh;
     background-color: #6D3B17;
 }
 
-.section-title::after {
-    content: '';
-    width: 90vw;
-    height: 3px;
-    background-color: #6D3B17;
+.section-title-after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .apps-grid {
     display: flex;
     justify-content: center;
