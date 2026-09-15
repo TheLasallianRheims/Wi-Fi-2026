@@ -400,8 +400,6 @@ button {
 
 .section-title::before {
     content: '';
-    width: 90vw;
-    height: 3px;
     background-color: #6D3B17;
 }
 
@@ -1014,21 +1012,22 @@ button {
     font-family: Inter, sans-serif;
     font-size: 2vw;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 8px;
     position: relative;
     letter-spacing: 1px;
 }
 
 .section-title::before {
+    content: "";
     position: absolute;
     top: 0;
-    left: 3%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 94vw;
     height: 0.3vh;
     background-color: #6D3B17;
@@ -1036,18 +1035,26 @@ button {
 
 .section-title-text {
     white-space: nowrap;
+    margin-top: 3vh;
 }
 
-.decorative-stars{
+.decorative-stars {
     display: flex;
     align-items: center;
     flex: 0 0 auto;
 }
 
-.decorative-stars img {
+.decorative-stars img,
+.decorative-stars-2 img {
     width: 48px;
     height: auto;
     transform: none;
+}
+
+.decorative-stars-2 {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
 }
 
 .section-title-after {
