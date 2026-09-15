@@ -386,6 +386,7 @@ button {
 .section-title {
     text-align: center;
     color: var(--primary-brown);
+    font-family: Inter, sans-serif;
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 40px;
@@ -1010,21 +1011,43 @@ button {
 .section-title {
     text-align: center;
     color: var(--primary-brown);
-    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-size: 2vw;
     font-weight: 800;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: relative;
     letter-spacing: 1px;
 }
 
 .section-title::before {
-    content: '';
+    position: absolute;
+    top: 0;
+    left: 3%;
     width: 94vw;
     height: 0.3vh;
     background-color: #6D3B17;
+}
+
+.section-title-text {
+    white-space: nowrap;
+}
+
+.decorative-stars{
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.decorative-stars img {
+    width: 48px;
+    height: auto;
+    transform: none;
 }
 
 .section-title-after {
