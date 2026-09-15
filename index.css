@@ -404,6 +404,12 @@ button {
     background-color: #6D3B17;
 }
 
+.section-title::after {
+    content: '';
+    width: 90vw;
+    height: 3px;
+    background-color: #6D3B17;
+}
 .apps-grid {
     display: flex;
     justify-content: center;
