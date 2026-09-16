@@ -212,17 +212,17 @@ button {
 .sun img {
     position: absolute;
     display: block;
-    top: 110px;
-    right: 450px;
-    width: 16%;
-    height: 38%;
+    top: 20vh;
+    right: 30vw;
+    width: 16vw;
+    height: 38vh;
     overflow: hidden;
     z-index: 0;
 }
 
 .trishape {
     position: absolute;
-    top: 130px;
+    top: 20vh;
     right: -0.5vw;
     width: 29%;
     height: 100%;
