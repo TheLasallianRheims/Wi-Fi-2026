@@ -122,6 +122,19 @@ button {
     flex-direction: column;
 }
 
+.hero-content > :not(.SHAPES):not(.sun) {
+    position: relative;
+    right: -5vw;
+}
+
+.sun {
+    position: absolute;
+    pointer-events: none;
+    z-index: 11;
+    top: 13vh;
+    right: 32vw;
+}
+
 .hero-title-small {
     color: var(--primary-brown);
     font-weight: 800;
@@ -207,17 +220,18 @@ button {
     margin: 0;
     padding: 0;
 }
-.sun,
-.trishape,
-.trishape2,
-.trishape3 {
+
+.SHAPES {
     position: absolute;
     pointer-events: none;
     z-index: 11;
+    top: 13vh;
+    right: 0vw;
 }
 
+
 /* decos front content */
-.sun {
+/* .sun {
     position: absolute;
     display: block;
     top: 20vh;
@@ -225,12 +239,12 @@ button {
     width: 16vw;
     height: 38vh;
     overflow: hidden;
-}
+} */
 
-.trishape {
+/* .trishape {
     top: 13vh;
     right: 1vw;
-    z-index: 3;
+    z-index: 1;
 }
 
 .trishape2 {
@@ -243,7 +257,7 @@ button {
     top: 32vh;
     right: -1vw;
     z-index: 3;
-}
+} */
 
 /* .trishape3 {
     position: absolute;
