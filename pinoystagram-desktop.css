@@ -525,6 +525,7 @@ button {
     max-width: 800px;
     margin: 20px auto;
 }
+
 .images-container {
     display: flex;
     justify-content: center;

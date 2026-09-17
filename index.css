@@ -207,9 +207,17 @@ button {
     margin: 0;
     padding: 0;
 }
+.sun,
+.trishape,
+.trishape2,
+.trishape3 {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
 
 /* decos front content */
-.sun img {
+.sun {
     position: absolute;
     display: block;
     top: 20vh;
@@ -217,33 +225,27 @@ button {
     width: 16vw;
     height: 38vh;
     overflow: hidden;
-    z-index: 0;
 }
 
 .trishape {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    top: 20vh;
-    right: -0.5vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 0;
+    top: 13vh;
+    right: 1vw;
+    z-index: 1;
 }
 
 .trishape2 {
-    position: absolute;
-    top: 255px;
-    right: -5px;
-    width: 10.5%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
+    top: 26vh;
+    right: 1vw;
+    z-index: 3;
 }
 
 .trishape3 {
+    top: 32vh;
+    right: -1vw;
+    z-index: 3;
+}
+
+/* .trishape3 {
     position: absolute;
     top: 288px;
     right: -0.5vw;
@@ -325,7 +327,7 @@ button {
     overflow: hidden;
     transform: scale(1.2, 1.2); 
     z-index: 0;
-}
+} */
 
 /* --- Content Section --- */
 .content-section {
@@ -378,8 +380,6 @@ button {
     margin-bottom: 0;
 }
 
-
-
 .section-title {
     text-align: center;
     color: var(--primary-brown);
@@ -403,7 +403,7 @@ button {
 .apps-grid {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 2vw;
     flex-wrap: wrap;
 }
 
@@ -443,9 +443,8 @@ button {
     position: relative;
     padding: 40px;
     margin-bottom: 10vh;
-    border-top: 1px solid rgba(204, 153, 0, 0.3);
-    border-bottom: 1px solid rgba(204, 153, 0, 0.3);
-    background-color: #FFF3D2;
+    background-color: var(--primary-cream);
+    border-bottom: none;
     z-index: 10;
 }
 
