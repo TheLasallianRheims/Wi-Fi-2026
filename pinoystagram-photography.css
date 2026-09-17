@@ -404,6 +404,40 @@ button {
     color: #6F2AC3;
 }
 
+.content-box {
+    position: relative;
+    width: min(1048px, 90vw);
+    aspect-ratio: 1048 / 445;
+    margin: 20px auto;
+}
+
+.content-box__background {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content-box__photo {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    width: 16%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.content-box p {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    right: 8%;
+    margin: 0;
+    color: #000;
+    text-align: left;
+}
+
 .bottom-right-shape,
 .bottom-right-shape-2,
 .bottom-right-shape-3,
