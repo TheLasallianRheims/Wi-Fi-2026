@@ -256,50 +256,111 @@ button {
 }
 
 /* decos front content */
-.sun {
-    display: block;
-    top: 11vh;
-    right: -2vw;
-    width: 20vw;
-    height: 38vh;
-    transform: scale(0.9);
-    overflow: hidden;
+.bottom-right-shape,
+.bottom-right-shape-2,
+.bottom-right-shape-3,
+.bottom-right-shape-4,
+.bottom-left-shape,
+.bottom-left-shape-2,
+.bottom-left-shape-3,
+.upper-left-shape,
+.middle-right-star,
+.bottom-middle-star,
+.bottom-right-ellipse,
+.middle-right-ellipse,
+.bottom-right-star,
+.bottom-left-star,
+.upper-left-shape-2{
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.trishape {
-    top: 105vh;
-    right: 9vw;
-    width: 50vw;
-    height: -100vh;
-    transform: scale(2.6);
+.bottom-right-shape {
+    right: -12vw;
+    bottom: -10vh;
     z-index: 1;
 }
 
-.trishape2 {
-    top: 105vh;
-    right: 10vw;
-    width: 50vw;
-    height: -100vh;
-    transform: scale(2.6);
-    z-index: 0;
+.bottom-right-shape-2 {
+    right: 0vw;
+    bottom: -4vh;
+    z-index: 2;
 }
 
-.trishape3 {
-    top: 112vh;
-    right: -87vw;
-    width: 50vw;
-    height: -100vh;
-    transform: scale(3.2);
+.bottom-right-shape-3 {
+    right: -1.4vw;
+    bottom: 0vh;
     z-index: 3;
 }
 
-.trishape4 {
-    top: 109vh;
+.bottom-right-shape-4 {
+    right: -1vw;
+    bottom: -1vh;
+    z-index: 5;
+}
+
+.bottom-left-shape{
+    left: 0vw;
+    bottom: -2vh;
+    z-index: 3;
+}
+
+.bottom-left-shape-2{
+    left: 0vw;
+    bottom: -2vh;
+    z-index: 2;
+}
+
+.bottom-left-shape-3{
+    left: 0vw;
+    bottom: -1vh;
+    z-index: 1;
+}
+
+.upper-left-shape{
+    left: 0vw;
+    top: 11vh;
+    z-index: 1;
+}
+
+.upper-left-shape-2{
+    left: 0vw;
+    top: 11vh;
+    z-index: 1;
+}
+
+.middle-right-star {
     right: 10vw;
-    width: 50vw;
-    height: -100vh;
-    transform: scale(2.6);
-    z-index: 0;
+    bottom: 64vh;
+}
+
+.bottom-middle-star {
+    right: 30vw;
+    bottom: 16vh;
+}
+
+.bottom-right-ellipse {
+    right: 4vw;
+    bottom: 20vh;
+    z-index: 4;
+}
+
+.middle-right-ellipse {
+    right: 3vw;
+    bottom: 87vh;
+}
+
+.bottom-right-star {    
+    right: 13vw;
+    bottom: 7vh;
+    z-index: 3;
+} 
+
+.bottom-left-star {
+    left: 40vw;
+    bottom: 4vh;
+    z-index: 5;
 }
 
 /* footer */
