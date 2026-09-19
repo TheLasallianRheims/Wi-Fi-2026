@@ -122,11 +122,6 @@ button {
     flex-direction: column;
 }
 
-.hero-content > :not(.SHAPES):not(.sun) {
-    position: relative;
-    right: -5vw;
-}
-
 .sun {
     position: absolute;
     pointer-events: none;
@@ -221,15 +216,6 @@ button {
     padding: 0;
 }
 
-.SHAPES {
-    position: absolute;
-    pointer-events: none;
-    z-index: 11;
-    top: 13vh;
-    right: 0vw;
-}
-
-
 /* decos front content */
 /* .sun {
     position: absolute;
@@ -241,24 +227,87 @@ button {
     overflow: hidden;
 } */
 
-/* .trishape {
-    top: 13vh;
-    right: 1vw;
+.sun,
+.trishape,
+.trishape2,
+.trishape3,
+.trishape4,
+.trishape5,
+.trishape6,
+.lineshape,
+.lineshape2,
+.rectangle,
+.rectangle2
+ {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sun {
+    top: 12vh;
+    right: 30vw;
+    z-index: 1;
+}
+.trishape {
+    top: 12vh;
+    right: 0vw;
     z-index: 1;
 }
 
 .trishape2 {
-    top: 26vh;
-    right: 1vw;
-    z-index: 3;
+    top: 25vh;
+    right: 0vw;
+    z-index: 2;
 }
 
 .trishape3 {
-    top: 32vh;
-    right: -1vw;
+    top: 27vh;
+    right: -0.6vw;
     z-index: 3;
-} */
+}
 
+.trishape4 {
+    top: 47vh;
+    right: 0vw;
+    z-index: 4;
+}
+
+.trishape5 {
+    top: 43vh;
+    right: 7vw;
+    z-index: 2;
+}
+
+.trishape6 {
+    top: 43vh;
+    right: 5vw;
+    z-index: 5;
+}
+
+.lineshape {
+    bottom: -27vh;
+    right: 0vw;
+    z-index: 5;
+}
+
+.lineshape2 {
+    bottom: -25vh;
+    right: 7vw;
+    z-index: 4;
+}
+
+.rectangle {
+    bottom: 33vh;
+    right: 60vw;
+    z-index: 4;
+}
+
+.rectangle2 {
+    bottom: 36vh;
+    right: 57vw;
+    z-index: 4;
+}
 /* .trishape3 {
     position: absolute;
     top: 288px;
