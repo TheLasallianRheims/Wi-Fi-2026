@@ -404,6 +404,7 @@ button {
     color: #6F2AC3;
 }
 
+.sun,
 .bottom-right-shape,
 .bottom-right-shape-2,
 .bottom-right-shape-3,
@@ -424,6 +425,10 @@ button {
     z-index: 0;
 }
 
+.sun {
+    right: 0vw;
+    bottom: 0vh;
+}
 .bottom-right-shape {
     right: -12vw;
     bottom: -20vh;

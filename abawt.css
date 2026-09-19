@@ -199,15 +199,6 @@ button {
     margin: 0;
     padding: 0;
 }
-.sun,
-.trishape,
-.trishape2,
-.trishape3,
-.trishape4 {
-    position: absolute;
-    pointer-events: none;
-    z-index: 0;
-}
 
 /* the card */
 .contentbody {
@@ -256,6 +247,17 @@ button {
 }
 
 /* decos front content */
+
+.sun,
+.trishape,
+.trishape2,
+.trishape3,
+.trishape4 {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
 .bottom-right-shape,
 .bottom-right-shape-2,
 .bottom-right-shape-3,
@@ -274,6 +276,12 @@ button {
     position: absolute;
     pointer-events: none;
     z-index: 0;
+}
+
+.sun {
+    top: 15vh;
+    right: 0vw;
+    z-index: 1;
 }
 
 .bottom-right-shape {
