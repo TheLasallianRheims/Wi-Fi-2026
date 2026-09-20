@@ -447,6 +447,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
     
 }
 
@@ -469,11 +470,12 @@ button {
     position: relative;
     z-index: 2;
     display: block;
+    transform: translateY(0.43vw);
     flex: 0 0 7.6vw;
-    width: 7.6vw;
-    max-width: 7.6vw;
-    height: 7.6vw;
-    max-height: 7.6vw;
+    width: 7.2vw;
+    max-width: 7.2vw;
+    height: 7.2vw;
+    max-height: 7.2vw;
     border-radius: 50%;
     object-fit: cover;
 }

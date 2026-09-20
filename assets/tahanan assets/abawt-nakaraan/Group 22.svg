@@ -1,10 +1,8 @@
-<svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="71" cy="71" r="71" fill="#693A19"/>
-<circle cx="71" cy="71" r="63" fill="#86AA1F"/>
-<circle cx="71" cy="71" r="51" fill="#FFD556"/>
-<circle cx="71" cy="71" r="45" fill="#D8D8D8"/>
-<rect x="39" y="105" width="64" height="29" fill="url(#pattern0_313_110)"/>
-<path d="M62.25 82.25C61.5625 82.25 60.974 82.0052 60.4844 81.5156C59.9948 81.026 59.75 80.4375 59.75 79.75V62.25C59.75 61.5625 59.9948 60.974 60.4844 60.4844C60.974 59.9948 61.5625 59.75 62.25 59.75H79.75C80.4375 59.75 81.026 59.9948 81.5156 60.4844C82.0052 60.974 82.25 61.5625 82.25 62.25V79.75C82.25 80.4375 82.0052 81.026 81.5156 81.5156C81.026 82.0052 80.4375 82.25 79.75 82.25H62.25ZM62.25 79.75H79.75V62.25H62.25V79.75ZM63.5 77.25H78.5L73.8125 71L70.0625 76L67.25 72.25L63.5 77.25Z" fill="#989898"/>
+<svg width="142" height="153" viewBox="0 0 142 153" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="71" cy="82" r="71" fill="#693A19"/>
+<circle cx="71" cy="82" r="63" fill="#86AA1F"/>
+<circle cx="71" cy="82" r="51" fill="#FFD556"/>
+<rect x="39" width="64" height="29" fill="url(#pattern0_313_110)"/>
 <defs>
 <pattern id="pattern0_313_110" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_313_110" transform="matrix(0.000791139 0 0 0.00174596 0 -0.00807508)"/>
