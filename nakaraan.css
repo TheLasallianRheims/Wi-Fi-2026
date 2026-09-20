@@ -280,6 +280,26 @@ button {
     margin-bottom: 0;
 }
 
+.upper-left-shape,
+.upper-left-shape-2,
+.bottom-right-shape,
+.bottom-right-shape-2,
+.bottom-right-shape-3,
+.bottom-right-shape-4,
+.bottom-left-shape,
+.bottom-left-shape-2,
+.bottom-left-shape-3,
+.middle-right-star,
+.bottom-middle-star,
+.bottom-right-ellipse,
+.middle-right-ellipse,
+.bottom-right-star,
+.bottom-left-star {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
 .sun {
     display: block;
     position: absolute;
