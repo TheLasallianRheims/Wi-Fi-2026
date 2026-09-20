@@ -60,7 +60,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: var(--primary-cream);
+    background-color: transparent;
     width: 100%;
 }
 
@@ -293,13 +293,13 @@ button {
 
 .upper-left-shape {
     left: 0vw;
-    top: 11vh;
+    top: 0vh;
     z-index: 1;
 }
 
 .upper-left-shape-2 {
     left: 0vw;
-    top: 11vh;
+    top: 0vh;
     z-index: 1;
 }
 
