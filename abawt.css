@@ -258,6 +258,9 @@ button {
     z-index: 0;
 }
 
+/* decos front content */
+.upper-left-shape,
+.upper-left-shape-2,
 .bottom-right-shape,
 .bottom-right-shape-2,
 .bottom-right-shape-3,
@@ -265,22 +268,38 @@ button {
 .bottom-left-shape,
 .bottom-left-shape-2,
 .bottom-left-shape-3,
-.upper-left-shape,
 .middle-right-star,
 .bottom-middle-star,
 .bottom-right-ellipse,
 .middle-right-ellipse,
 .bottom-right-star,
-.bottom-left-star,
-.upper-left-shape-2{
+.bottom-left-star {
     position: absolute;
     pointer-events: none;
     z-index: 0;
 }
 
 .sun {
-    top: 15vh;
-    right: 0vw;
+    display: block;
+    position: absolute;
+    top: 7vh;
+    right: -2vw;
+    width: 20vw;
+    height: 38vh;
+    transform: scale(0.7);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.upper-left-shape {
+    left: 0vw;
+    top: 11vh;
+    z-index: 1;
+}
+
+.upper-left-shape-2 {
+    left: 0vw;
+    top: 11vh;
     z-index: 1;
 }
 
@@ -308,33 +327,21 @@ button {
     z-index: 5;
 }
 
-.bottom-left-shape{
+.bottom-left-shape {
     left: 0vw;
     bottom: -2vh;
     z-index: 3;
 }
 
-.bottom-left-shape-2{
+.bottom-left-shape-2 {
     left: 0vw;
     bottom: -2vh;
     z-index: 2;
 }
 
-.bottom-left-shape-3{
+.bottom-left-shape-3 {
     left: 0vw;
     bottom: -1vh;
-    z-index: 1;
-}
-
-.upper-left-shape{
-    left: 0vw;
-    top: 11vh;
-    z-index: 1;
-}
-
-.upper-left-shape-2{
-    left: 0vw;
-    top: 11vh;
     z-index: 1;
 }
 
@@ -359,11 +366,11 @@ button {
     bottom: 87vh;
 }
 
-.bottom-right-star {    
+.bottom-right-star {
     right: 13vw;
     bottom: 7vh;
     z-index: 3;
-} 
+}
 
 .bottom-left-star {
     left: 40vw;
