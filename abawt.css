@@ -377,6 +377,62 @@ button {
     bottom: 4vh;
     z-index: 5;
 }
+/* Mga taong nagtrabaho sa proyekto */
+
+.project-members-section {
+    background-color: #FFECB5;
+    z-index: 10;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 10px;
+}
+
+.Header h1 {
+    margin: 0;
+    color: #895129;
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 5rem);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: none;
+}
+
+.Header-description {
+    margin: 0;
+    color: #5B2C0B;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 6vh;
+    margin: 1vh auto 0;
+    padding: 0;
+}
+
+.divider img {
+    display: block;
+    width: 90%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    transform: translateY(4px);
+}
 
 /* footer */
 .footer-top {
