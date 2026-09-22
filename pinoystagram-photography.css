@@ -409,6 +409,8 @@ button {
     width: min(1048px, 90vw);
     aspect-ratio: 1048 / 445;
     margin: 20px auto;
+    font-family: Inter, sans-serif;
+    z-index: 20;
 }
 
 .content-box__background {
@@ -428,13 +430,26 @@ button {
     object-fit: cover;
 }
 
-.content-box p {
+.content-box h2 {
     position: absolute;
-    top: 8%;
-    left: 8%;
+    top: 15%;
+    left: 28%;
     right: 8%;
     margin: 0;
     color: #000;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.content-box p {
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    right: 8%;
+    margin: 0;
+    color: #000;
+    font-family: Inter, sans-serif;
     text-align: left;
 }
 
