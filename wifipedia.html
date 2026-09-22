@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wi-Fipedia</title>
     
-  <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    
-    <script>
-        // Check if screen width is 768px or smaller
-        if (window.innerWidth <= 768) {
-        // Redirect to mobile-specific HTML file
-            window.location.href = "wifipedia-mobile.html";
-        }
-    </script>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,9 +33,14 @@
             <a class="nav-button" href="abawt.html">Abawt</a>
             <a class="nav-button" href="nakaraan.html">Nakaraan</a>
         </nav>
-        <button>
-            <img src="assets/search.png" alt="Search">
-        </button>
+        <div class="nav-icons">
+            <button class="menu">
+                <img src="assets/wifipedia assets/menu.svg" alt="Menu">
+            </button>
+            <button class="search">
+                <img src="assets/search.png" alt="Search">
+            </button>
+        </div>
     </header>
 
     <section class="home">
@@ -53,11 +50,16 @@
                 <img src="assets/wifipedia assets/wifipedia-logo.png" alt="WiFi-pedia!">
             </div>
         </section>
+ 
+        <img class="triangle-deco triangle1" src="assets/wifipedia assets/triangle1.png">
+        <img class="triangle-deco triangle2" src="assets/wifipedia assets/triangle2.png">
+        <img class="triangle-deco triangle3" src="assets/wifipedia assets/triangle3.png">
+        <img class="triangle-deco triangle4" src="assets/wifipedia assets/triangle4.png">
 
-        <img class="triangle-deco" id="triangle1" src="assets/wifipedia assets/triangle1.png" alt="">
-        <img class="triangle-deco" id="triangle2" src="assets/wifipedia assets/triangle2.png" alt="">
-        <img class="triangle-deco" id="triangle3" src="assets/wifipedia assets/triangle3.png" alt="">
-        <img class="triangle-deco" id="triangle4" src="assets/wifipedia assets/triangle4.png" alt="">
+        <img class="triangle-deco-mobile triangle5" src="assets/wifipedia assets/triangle5.png">
+        <img class="triangle-deco-mobile triangle6" src="assets/wifipedia assets/triangle6.png">
+        <img class="triangle-deco-mobile triangle7" src="assets/wifipedia assets/triangle7.png">
+        <img class="triangle-deco-mobile triangle8" src="assets/wifipedia assets/triangle8.png">
 
         <a href="#main-content" class="scroll-arrow">
             <img src="assets/wifipedia assets/chevron.png" alt="Scroll down">
@@ -87,22 +89,24 @@
 
         <!-- Top Description -->
         <section class="description">
-            <img src="assets/wifipedia assets/line1.png" alt="">
-            <p>
-                Ang Pilipinas ay talagang hindi maikukumpara sa buong mundo.
-                Mula sa Luzon, Visayas, at Mindanao -- tunay na
-                walang tulad ang ating pagiging Pilipino.
-            </p>
-            <p>
-                Dito sa Wi-Fipedia, sama-sama nating alamin at kilalanin
-                ang Kasaysayan, Kultura, at mga Wika ng ating bayan.
-            </p>
-            <img src="assets/wifipedia assets/line2.png" alt="">
+            <img class="description-line" src="assets/wifipedia assets/line1.png" alt="">
+            <div class="description-copy">
+                <p>
+                    Ang Pilipinas ay talagang hindi maikukumpara sa buong mundo.
+                    Mula sa Luzon, Visayas, at Mindanao -- tunay na
+                    walang tulad ang ating pagiging Pilipino.
+                </p>
+                <p>
+                    Dito sa Wi-Fipedia, sama-sama nating alamin at kilalanin
+                    ang Kasaysayan, Kultura, at mga Wika ng ating bayan.
+                </p>
+            </div>
+            <img class="description-line" src="assets/wifipedia assets/line2.png" alt="">
         </section>
 
         <!-- Destination Cards -->
         <section class="destination-cards">
-            <h1 style="color: var(--color-destination-heading); font-size: 64px;">Pumili ng Bibisitahin</h1>
+            <h1>Pumili ng Bibisitahin</h1>
             <div class="card-container">
                 <a href="kasaysayan.html">
                     <img src="assets/wifipedia assets/kasaysayan.png" alt="Kasaysayan!">
@@ -130,39 +134,108 @@
 
     <footer class="desktop-footer">
 
-        <div class="footer-top" style="margin-bottom:-50px;">
-            <img src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos" style="transform: translate(-20px, 5px);">
+        <div class="footer-top">
+            <img class="footer-logos-image" src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos">
             <p>THE LASALLIAN RHEIMS</p>
-            <img src="assets/wifipedia assets/footer-icons.png" alt="Icons" style="transform: translateY(-5px)">
+            <img class="footer-icons-image" src="assets/wifipedia assets/footer-icons.png" alt="Icons">
         </div>
 
         <div class="footer-bottom">
-            <img style="margin: 0;" src="assets/wifipedia assets/line3.png" alt="">
+            <img class="footer-divider" src="assets/wifipedia assets/line3.png" alt="">
             <p>
                 <img src="assets/wifipedia assets/mail.png" alt="">
                 info@rheims.net
             </p>
-            <p style="margin-top: -15px;">
+            <p class="footer-contact-phone">
                 <img src="assets/wifipedia assets/phone.png" alt="">
                 0920 426 5779
             </p>
-            <img style="margin: 0; margin-bottom: 20px;" src="assets/wifipedia assets/line4.png" alt="">
-            <p style="font-weight: 400;">
+            <img class="footer-divider footer-divider-bottom" src="assets/wifipedia assets/line4.png" alt="">
+            <p class="footer-description">
                 Academy of Saint John - La Salle Greenhills and 
                 De La Salle Santiago Zobel Partner School
             </p>   
-            <p style="font-weight:400; font-size: 19.89px; margin-top: -10px;"> 
+            <p class="footer-description footer-location"> 
                 Brgy. Sta. Clara, City of General Trias
             </p>
 
             <!-- Centered Star Line -->
-            <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px; margin: 10px 0;">
-                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
-                <img src="assets/wifipedia assets/low-star.png" alt="" style="margin: 0 10px; width: 34.81px; height: 34.81px;">
-                <span style="flex: 1; height: 2.5px; background-color: var(--color-star-line);"></span>
+            <div class="footer-star-line">
+                <span></span>
+                <img src="assets/wifipedia assets/low-star.png" alt="">
+                <span></span>
             </div>
 
-            <p style="font-size: 19.89px; font-weight:400; margin-top: -10px;">
+            <p class="footer-copyright">
+                © The Lasallian Rheims. All Rights Reserved.
+            </p> 
+
+            <!-- Decorative Bottom Line -->
+            <div class="fancy-corner-line">
+                <div class="corner-left">
+                    <div class="corner-left-box"></div>
+                    <div class="corner-left-line"></div>
+                </div>
+                <div class="center-line"></div>
+                <div class="corner-right">
+                    <div class="corner-right-box"></div>
+                    <div class="corner-right-line"></div>
+                </div>
+            </div>
+       </div>
+
+       <div class="bottom-bar"></div>
+
+    </footer>
+
+    <footer class="mobile-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-logos">
+                <img src="assets/wifipedia assets/asj-logo.png" alt="ASJ Logo">
+                <img src="assets/wifipedia assets/rheims-logo.png" alt="Rheims Logo">
+            </div>
+
+            <div class="footer-top-text">
+                <p>
+                    THE LASALLIAN RHEIMS
+                </p>
+            </div>
+            
+            <div>
+                <img src="assets/wifipedia assets/footer-icons.png">
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <img class="footer-divider" src="assets/wifipedia assets/line3.png" alt="">
+            <p>
+                <img src="assets/wifipedia assets/mail.png" alt="">
+                info@rheims.net
+            </p>
+            <p class="footer-contact-phone">
+                <img src="assets/wifipedia assets/phone.png" alt="">
+                0920 426 5779
+            </p>
+            <img class="footer-divider footer-divider-bottom" src="assets/wifipedia assets/line4.png" alt="">
+            <p class="footer-description">
+                Academy of Saint John - La Salle Greenhills and 
+                De La Salle Santiago Zobel Partner School
+            </p>   
+            <p class="footer-description footer-location"> 
+                Brgy. Sta. Clara, City of General Trias
+            </p>
+
+            <!-- Centered Star Line -->
+            <div class="footer-star-line">
+                <span></span>
+                <img src="assets/wifipedia assets/low-star.png" alt="">
+                <span></span>
+            </div>
+
+            <p class="footer-copyright">
                 © The Lasallian Rheims. All Rights Reserved.
             </p> 
 
