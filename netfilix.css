@@ -97,13 +97,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: -50px;
-    transform: translateX(-50px);
     flex-wrap: nowrap;
 }
 
 .netfilix-logo {
-    width: 387px;
-    height: 160px;
+    width: min(7.5vw, 387px);
+    height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,9 +117,8 @@ body {
 .netfilix-text {
     font-family: Inter, sans-serif;
     font-weight: 700;
-    font-size: 204.86px;
+    font-size: clamp(50px, 16vw, 204.86px);
     color: var(--color-netfilix-text);
-    margin-left: -130px;
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -252,7 +250,7 @@ button {
     margin: auto;
     padding: 84px 0;
     box-sizing: border-box;
-    position: relative; 
+    position: relative;
 }
 
 .heading {
@@ -280,19 +278,21 @@ button {
 
 .movie-cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 75px;
-    width: min(100%, 1280px);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 348px));
+    gap: clamp(24px, 4vw, 75px);
+    width: min(100% - 48px, 1280px);
     margin: 150px auto 0;
     z-index: 2;
     transform: translateY(-40px);
     box-sizing: border-box;
     justify-items: center;
+    justify-content: center;
 }
 
 .movie-cards img {
     display: block;
-    width: 348px;
+    width: 100%;
+    max-width: 348px;
     object-fit: cover;
     border-radius: 16px;
 }
@@ -303,24 +303,27 @@ button {
 
 .movie-cards-last {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 75px;
-    width: min(100%, 1280px);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 348px));
+    gap: clamp(24px, 4vw, 75px);
+    width: min(100% - 48px, 1280px);
     margin: 150px auto 0;
     z-index: 2;
     box-sizing: border-box;
     margin-top: 40px;
+    justify-items: center;
+    justify-content: center;
 }
 
 .movie-cards-last img {
     display: block;
-    width: 348px;
+    width: 100%;
+    max-width: 348px;
     object-fit: cover;
     border-radius: 16px;
 }
 
 #movie13 {
-    justify-self: end;
+    justify-self: center;
 }
 
 .desktop-footer {

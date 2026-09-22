@@ -68,7 +68,7 @@ body {
 }
 
 .spotifi-landing {
-    height: 100%;
+    height: 100svh;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -85,21 +85,39 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: -50px;
+    gap: clamp(8px, 1.5vw, 24px);
+    margin: 0 60px 30px;
+    transform: translateY(50px);
 }
 
 .spotifi-logo {
-    width: 387px;
-    height: 411px;
-    transform: translate(60px, 60px);
+    width: min(300px, 24vw);
+    height: auto;
+    flex: 0 1 auto;
+}
+
+.spotifi-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .spotifi-text {
+    line-height: 1;
+    min-width: 0;
+}
+
+.spotifi-text p {
     font-family: Inter, sans-serif;
     font-weight: 700;
-    font-size: 204.86px;
+    font-size: clamp(3.5rem, 10.67vw, 204.86px);
     color: var(--color-netfilix-text);
-    transform: translateX(-40px);
+    white-space: nowrap;
+}
+
+.spotifi-subtext {
+    width: min(70vw, 1500px);
+    margin-top: clamp(12px, 2vw, 28px);
 }
 
 .spotifi-subtext {
@@ -107,7 +125,7 @@ body {
     font-weight: 500;
     font-size: 40px;
     color: var(--color-pure-white);
-    margin-top: -40px;
+    text-align: center;
 }
 
 .spotifi-title p,
@@ -209,6 +227,26 @@ button {
 }
 
 @media (max-width: 768px) {
+    .spotifi-title {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .spotifi-logo {
+        width: 27vw;
+        transform: none;
+    }
+
+    .spotifi-text {
+        font-size: clamp(2rem, 14vw, 5rem);
+        text-align: center;
+        transform: none;
+    }
+
+    .main .spotifi-title .spotifi-text {
+        font-size: clamp(2.5rem, 14vw, 5rem) !important;
+    }
+
     .menu {
         display: block;
     }
@@ -237,17 +275,16 @@ button {
 }
 
 .spotifi-description {
-    max-width: 1159px;
-    width: 100%;
+    width: min(80vw, 1160px);
+    margin-top: min(10vw, 100px);
 }
 
 .spotifi-description p {
-    font-size: 32px;
+    font-size: clamp(15px,5vw,32px);
     font-family: Inter;
     font-weight: 700;
     text-align: center;
     color: var(--color-pure-white);
-    margin-top: 100px;
 }
 
 .spotifi-title {
@@ -330,6 +367,14 @@ button {
     height: 2.5px; 
     background-color: #F3F1ED;
 }  
+
+.starry-line {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: min(80vw,800px);
+    margin-top: 50px;
+}
 
 .decorative-hills {
     position: relative;
