@@ -401,7 +401,7 @@ button {
     font-size: clamp(24px, 5vw, 48px);
     width: fit-content;
     text-align: center;
-    margin: 20px auto;
+    margin: 12px auto;
     color: #6F2AC3;
 }
 
@@ -409,31 +409,34 @@ button {
     position: relative;
     width: min(1048px, 90vw);
     aspect-ratio: 1048 / 445;
-    margin: 20px auto;
     font-family: Inter, sans-serif;
     z-index: 20;
+    height: 35vw;
 }
 
 .content-box__background {
     position: absolute;
-    inset: 0;
+    top: -4%;
+    right: 0;
+    left: 0;
     display: block;
     width: 100%;
-    height: 110%;
+    height: 140%;
+    z-index: -1;
 }
 
 .content-box__photo {
     position: absolute;
-    top: 15%;
+    top: 45%;
     left: 3%;
-    width: 24%;
-    height: 70%;
+    width: 22%;
+    height: 45%;
     object-fit: cover;
 }
 
 .content-box h2 {
     position: absolute;
-    top: 15%;
+    top: 34.5%;
     left: 28%;
     right: 8%;
     margin: 0;
@@ -445,7 +448,7 @@ button {
 
 .content-box p {
     position: absolute;
-    top: 27%;
+    top: 39%;
     left: 28%;
     right: 8%;
     margin: 0;
