@@ -395,6 +395,7 @@ button {
     width: fit-content;
     color: black;
 }
+
 #subheading {
     font-family: 'Lilita One', cursive;
     font-size: clamp(24px, 5vw, 48px);
@@ -418,14 +419,14 @@ button {
     inset: 0;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 
 .content-box__photo {
     position: absolute;
     top: 15%;
-    left: 8%;
-    width: 16%;
+    left: 3%;
+    width: 24%;
     height: 70%;
     object-fit: cover;
 }
@@ -444,7 +445,7 @@ button {
 
 .content-box p {
     position: absolute;
-    top: 32%;
+    top: 27%;
     left: 28%;
     right: 8%;
     margin: 0;
@@ -574,6 +575,7 @@ button {
     max-width: 800px;
     margin: 20px auto;
 }
+
 .images-container {
     display: flex;
     justify-content: center;
