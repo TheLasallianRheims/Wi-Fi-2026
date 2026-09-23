@@ -161,7 +161,8 @@ body {
 
 .nav-buttons {
     display: flex;
-    width: 1114px;
+    width: 90vw;
+    max-width: 1114px;
     height: 63px;
     justify-content: space-between;
     margin-top: 18px;
@@ -236,14 +237,14 @@ button {
     position: absolute;
     pointer-events: none;
     top: 353px;
-    left: 1066px;
+    right: 0;
 }
 
 #cloud4 {
     position: absolute;
     pointer-events: none;
     top: 326px;
-    left: 1185px;
+    right: -100px;
 }
 
 .sunburst {
@@ -289,9 +290,12 @@ button {
     align-items: center;
     text-align: center;
     z-index: 2;
-    width: 1215px;
+    width: 90vw;
+    max-width: 1024px;
     height: auto;
     margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
     transform: translateY(-20px);
 } 
 
@@ -370,13 +374,13 @@ button {
 
 #hill4 {
     height: min(60px, 5vw);
-    left: calc(50% - 700px);
+    left: clamp(0px, calc(50% - 700px), calc(100% - 200px));
     z-index: 4;
 }
 
 #hill5 {
     height: min(75px, 6vw);
-    left: calc(50% - 200px);
+    left: clamp(0px, calc(50% - 200px), calc(100% - 150px));
     z-index: 5;
 }
 

@@ -7,14 +7,6 @@
     
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
 
-    <script>
-        // Check if screen width is 768px or smaller
-        if (window.innerWidth <= 768) {
-        // Redirect to mobile-specific HTML file
-            window.location.href = "netfilix-mobile.html";
-        }
-    </script>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +20,7 @@
 
 <body>
 
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <a href="index.html" class="logo">
             <img src="assets/wifipedia assets/logo.png" alt="Wi-Fi Logo">
         </a>
@@ -51,6 +43,20 @@
             </button>
         </div>
     </header>
+
+    <!-- changes navbar color on scroll -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (!nav) return;
+
+            if (window.scrollY > window.innerHeight) {
+                nav.classList.add('red');
+            } else {
+                nav.classList.remove('red');
+            }
+        });
+    </script>
 
     <section class="home">
 
