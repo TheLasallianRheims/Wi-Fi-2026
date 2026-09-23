@@ -396,6 +396,7 @@ button {
     width: fit-content;
     color: black;
 }
+
 #subheading {
     font-family: 'Lilita One', cursive;
     font-size: clamp(24px, 5vw, 48px);
@@ -554,10 +555,10 @@ button {
 }
 
 .photo-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
     font-weight: 700;
-    color: #000;
+    color: #6F2AC3;
     margin: 16px 0 0;
     text-align: center;
 }

@@ -415,7 +415,6 @@ button {
     grid-template-rows: auto 1fr;
     column-gap: 1%;
     padding: 7% 8% 7% 3%;
-    margin: 20px auto;
     box-sizing: border-box;
 }
 

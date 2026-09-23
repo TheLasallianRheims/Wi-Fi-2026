@@ -7,7 +7,11 @@
         alert('Search coming soon!');
     });
 
+    const firstPage = document.querySelector('.viewport');
+    const secondPage = document.querySelector('.second-page');
+
     document.querySelector('.carousel-chevron').addEventListener('click', function () {
-        alert('Next page coming soon!');
+        firstPage.hidden = true;
+        secondPage.hidden = false;
     });
 })();
