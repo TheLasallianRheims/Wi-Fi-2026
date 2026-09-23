@@ -411,23 +411,29 @@ button {
     aspect-ratio: 1048 / 445;
     font-family: Inter, sans-serif;
     z-index: 20;
-    height: 35vw;
+    height: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 4vw;
+    box-sizing: border-box;
 }
 
 .content-box__background {
     position: absolute;
-    top: -4%;
+    top: 0;
     right: 0;
     left: 0;
-    display: block;
+    bottom: 0;
     width: 100%;
-    height: 140%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
     z-index: -1;
 }
 
 .content-box__photo {
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 3%;
     width: 22%;
     height: 45%;
@@ -435,8 +441,8 @@ button {
 }
 
 .content-box h2 {
-    position: absolute;
-    top: 34.5%;
+    position: relative;
+    top: 17%;
     left: 28%;
     right: 8%;
     margin: 0;
@@ -447,8 +453,8 @@ button {
 }
 
 .content-box p {
-    position: absolute;
-    top: 39%;
+    position: relative;
+    top: 25%;
     left: 28%;
     right: 8%;
     margin: 0;
