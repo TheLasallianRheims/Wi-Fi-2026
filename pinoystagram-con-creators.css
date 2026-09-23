@@ -467,7 +467,7 @@ button {
     margin: 0;
     color: #000;
     font-family: Inter, sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 
 .content-box__description--lans {
