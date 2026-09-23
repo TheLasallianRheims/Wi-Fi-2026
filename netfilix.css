@@ -63,11 +63,15 @@ body {
     left: 0;
     z-index: 1000;
     background-color: transparent;
-    animation: headerColorChange linear forwards;
+    animation: headerColorChange linear;
     animation-timeline: scroll();
     animation-range: 0px 100svh;
     box-sizing: border-box;
     width: 100%;
+}
+
+.red {
+    background-color: var(--color-main);
 }
 
 .menu {
@@ -101,7 +105,7 @@ body {
 }
 
 .netfilix-logo {
-    width: min(7.5vw, 387px);
+    width: min(6.5vw, 335px);
     height: 1;
     display: flex;
     align-items: center;
@@ -121,7 +125,7 @@ body {
     color: var(--color-netfilix-text);
     white-space: nowrap;
     flex-shrink: 0;
-    margin-left: min(0.6vw, 35px);
+    margin-left: min(0.75vw, 40px);
 }
 
 .netfilix-subtext {
@@ -315,6 +319,10 @@ button {
     margin-top: 40px;
     justify-items: center;
     justify-content: center;
+}
+
+.movie-cards-last img:hover {
+    transform: scale(1.02);
 }
 
 .movie-cards-last img {
