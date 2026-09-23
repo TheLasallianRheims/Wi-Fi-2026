@@ -15,6 +15,7 @@
 * {
     scrollbar-width: none;
     -ms-overflow-style: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 *::-webkit-scrollbar {
@@ -53,7 +54,8 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 12px;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,6 +65,14 @@ body {
     animation-timeline: scroll();
     animation-range: 0px 706px;
     width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.search {
+    margin-right: 50px;
 }
 
 .wifipedia-landing {
@@ -75,7 +85,6 @@ body {
     justify-content: center;
     position: relative;
     background: linear-gradient(var(--color-surface-white), var(--color-landing-gray));
-    z-index: 0;
 }
 
 .triangle-deco {
@@ -84,23 +93,33 @@ body {
     pointer-events: none;
 }
 
-#triangle1 {
+.triangle-deco-mobile {
+    display: none;
+}
+
+.triangle1, .triangle6 {
     bottom: 0;
     left:0;
 }
 
-#triangle2 {
+.triangle2 {
     bottom: 70px;
     left:0;
     z-index: 0;
 }
 
-#triangle3 {
+.triangle7 {
+    bottom: 114px;
+    left:0;
+    z-index: 0;
+}
+
+.triangle3, .triangle5 {
     top: 0;
     left: 0;
 }
 
-#triangle4 {
+.triangle4, .triangle8 {
     bottom: 0;
     right: 0;
     z-index: 0;
@@ -114,6 +133,7 @@ body {
     justify-content: center;
     margin: 0;
     align-self: center;
+    z-index: 2;
 }
 
 .wifipedia-logo img {
@@ -154,6 +174,15 @@ body {
     font-weight: 700;
     color: var(--color-navigation-text);
     text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nav-icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
 .nav-button:hover {
@@ -227,18 +256,25 @@ button {
     height: 764px;
 }
 
-.cloud {
-    position: absolute;
-}
-
 .heading {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80vw;
+    max-width: 812px;
+}
+
+.description-line {
+    width: 80vw;
+    max-width: 812px;
+}
+
+.description-copy {
+    width: 80vw;
+    max-width: 1024px;
 }
 
 .heading img {
-    width: 812px;
+    width: 100%;
     height: auto;
     margin-top: 100px;
     z-index: 2;
@@ -268,11 +304,28 @@ button {
     transform: translateY(-40px);
 }
 
+.destination-cards h1 {
+    color: var(--color-destination-heading);
+    font-size: clamp(2rem, 9vw, 4.8rem);
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+}
+
+.card-container img {
+    min-width: 300px;
+    width: 80vw;
+    max-width: 450px;
+}
+
+@media (max-width: 1250px) {
+    .card-container {
+        flex-direction: column;
+    }
 }
 
 .card-container a:hover {
@@ -282,7 +335,8 @@ button {
 .hills {
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 20vw;
+    max-height: 150px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -297,33 +351,37 @@ button {
 }
 
 #hill1 {
-    height: 150px;
+    height: min(150px, 12vw);
     left: 0;
     z-index: 1;
 }
 
 #hill2 {
-    height: 150px;
+    height: min(150px, 12vw);
     right: 0;
     z-index: 2;
 }
 
 #hill3 {
-    height: 110px;
-    left: 350px;
+    height: min(110px, 9vw);
+    left: 20vw;
     z-index: 3;
 }
 
 #hill4 {
-    height: 60px;
+    height: min(60px, 5vw);
     left: calc(50% - 700px);
     z-index: 4;
 }
 
 #hill5 {
-    height: 75px;
+    height: min(75px, 6vw);
     left: calc(50% - 200px);
     z-index: 5;
+}
+
+.mobile-footer {
+    display: none;
 }
 
 .desktop-footer {
@@ -350,6 +408,7 @@ button {
     margin: 0 auto;
     padding-top: 30px;
     box-sizing: border-box;
+    margin-bottom: 0;
 }
 
 .footer-top img {
@@ -359,7 +418,15 @@ button {
     height: auto;
 }
 
-.footer-top p {
+.footer-logos-image {
+    transform: translate(-20px, 5px);
+}
+
+.footer-icons-image {
+    transform: translateY(-5px);
+}
+
+.footer-top p, .footer-top-text p {
     font-size: 60.41px;
     font-family: Tiro Devanagari Hindi, serif;
     text-align: center;
@@ -380,10 +447,60 @@ button {
     padding-bottom: 0;
 }
 
+.desktop-footer .footer-bottom {
+    padding-top: 24px;
+}
+
 .footer-bottom p {
     font-family: Inter, sans-serif;
     font-size: 23.87px;
     font-weight: 600;
+}
+
+.footer-divider {
+    margin: 0;
+}
+
+.footer-divider-bottom {
+    margin-bottom: 20px;
+}
+
+.footer-contact-phone {
+    margin-top: -15px;
+}
+
+.footer-bottom .footer-description,
+.footer-bottom .footer-location,
+.footer-bottom .footer-copyright {
+    font-weight: 400;
+}
+
+.footer-location,
+.footer-copyright {
+    font-size: 19.89px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.footer-star-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.footer-star-line span {
+    flex: 1;
+    height: 2.5px;
+    background-color: var(--color-star-line);
+}
+
+.footer-star-line img {
+    width: 34.81px;
+    height: 34.81px;
+    margin: 0 10px;
 }
 
 .fancy-corner-line {
@@ -515,4 +632,285 @@ button {
     height: 25.86px;
     margin: 0;
     margin-bottom: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1300px) and (min-width: 769px) {
+    .desktop-footer .footer-top img {
+        width: clamp(100px, 25vw, 300px);
+        max-width: 30%;
+    }
+
+    .desktop-footer .footer-top p {
+        flex: 1 1 auto;
+        min-width: 0;
+        font-size: clamp(2rem, 5vw, 3.75rem);
+        white-space: normal;
+    }
+}
+
+@media (max-width: 1250px) and (min-width: 769px) {
+
+    .navbar {
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        margin-right: 0;
+    }
+
+    .nav-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px 18px;
+        width: min(760px, calc(100% - 220px));
+        height: auto;
+        box-sizing: border-box;
+        justify-content: initial;
+    }
+
+    .nav-button {
+        text-align: center;
+    }
+
+    .navbar > button {
+        flex-shrink: 0;
+    }
+
+    #hill4, #hill5 {
+        display: none;
+    }
+
+    .desktop-footer .footer-top {
+        width: calc(100% - 40px);
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .desktop-footer .footer-top img {
+        width: clamp(100px, 25vw, 300px);
+        max-width: 30%;
+    }
+
+    .desktop-footer .footer-top p {
+        flex: 1 1 auto;
+        min-width: 0;
+        font-size: clamp(2rem, 5vw, 3.75rem);
+        white-space: normal;
+    }
+
+    .desktop-footer .footer-bottom {
+        padding: 24px 20px 0;
+        box-sizing: border-box;
+    }
+
+    .desktop-footer .footer-bottom > img,
+    .desktop-footer .fancy-corner-line {
+        max-width: 100%;
+    }
+
+    .desktop-footer .footer-bottom p {
+        max-width: 100%;
+        text-align: center;
+        font-size: clamp(1rem, 2.2vw, 1.49rem);
+    }
+
+    .desktop-footer .fancy-corner-line {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wifipedia-logo {
+        width: 80vw;
+        height: auto;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+    justify-content: left;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .home {
+        height: 100svh;
+    }
+
+    .sunburst {
+        margin-right: -100vw;
+    }
+
+    .triangle-deco {
+        display: none;
+    }
+
+    .triangle-deco-mobile {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    #hill4, #hill5 {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        overflow: hidden;
+        background-color: var(--color-surface-white);
+    }
+
+    .mobile-footer .footer-top {
+        width: 100%;
+        padding: 14px 8px 0;
+        margin: 0;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .mobile-footer .footer-logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    .mobile-footer .footer-logos img {
+        width: clamp(62px, 19vw, 78px);
+        height: auto;
+    }
+
+    .mobile-footer .footer-top-text {
+        width: 100%;
+    }
+
+    .mobile-footer .footer-top-text p {
+        font-size: clamp(2rem, 9vw, 2.5rem);
+        line-height: 0.9;
+        white-space: normal;
+    }
+
+    .mobile-footer .footer-top > div:last-child img {
+        width: clamp(180px, 58vw, 240px);
+        height: auto;
+    }
+
+    .mobile-footer .footer-bottom {
+        gap: 8px;
+        padding: 8px 8px 0;
+    }
+
+    .mobile-footer .footer-bottom > img {
+        width: min(78vw, 315px);
+        height: auto;
+    }
+
+    .mobile-footer .footer-bottom p {
+        max-width: 100%;
+        font-size: clamp(0.95rem, 4vw, 1.15rem);
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .mobile-footer .footer-bottom p:has(> img) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .mobile-footer .footer-bottom p > img {
+        width: 28px;
+        height: auto;
+        margin: 0;
+    }
+
+    .mobile-footer .footer-description,
+    .mobile-footer .footer-location,
+    .mobile-footer .footer-copyright {
+        font-size: clamp(0.78rem, 3.3vw, 0.95rem) !important;
+        line-height: 1.15;
+    }
+
+    .mobile-footer .footer-location {
+        margin-top: -4px !important;
+    }
+
+    .mobile-footer .footer-star-line {
+        width: 85% !important;
+        margin: 4px 0 !important;
+    }
+
+    .mobile-footer .footer-copyright {
+        margin-top: -2px !important;
+    }
+
+    .mobile-footer .fancy-corner-line {
+        width: calc(100% - 2px);
+        height: 42px;
+        margin: -8px auto 0;
+    }
+
+    .mobile-footer .corner-left,
+    .mobile-footer .corner-right {
+        width: 42px;
+        height: 42px;
+    }
+
+    .mobile-footer .corner-left-box,
+    .mobile-footer .corner-right-box,
+    .mobile-footer .corner-left-line,
+    .mobile-footer .corner-right-line,
+    .mobile-footer .corner-left::after,
+    .mobile-footer .corner-left::before,
+    .mobile-footer .corner-right::after,
+    .mobile-footer .corner-right::before {
+        width: 21px;
+        height: 21px;
+        border-width: 4.5px;
+    }
+
+    .mobile-footer .corner-left-box,
+    .mobile-footer .corner-right-box {
+        bottom: 21px;
+    }
+
+    .mobile-footer .corner-left-line,
+    .mobile-footer .corner-right-line {
+        bottom: 42px;
+    }
+
+    .mobile-footer .corner-right::before {
+        right: 21px;
+    }
+
+    .mobile-footer .center-line {
+        height: 4px;
+    }
+
+    .mobile-footer .bottom-bar {
+        margin-top: 16px;
+    }
+
+    .desktop-footer {
+        display: none;
+    }
+
+    .mobile-footer p {
+        margin: 0;
+        padding: 0;
+    }
 }

@@ -8,12 +8,6 @@
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
     
     <script>
-        // Check if screen width is 768px or smaller
-        if (window.innerWidth <= 768) {
-        // Redirect to mobile-specific HTML file
-            window.location.href = "tahanan-mobile.html";
-        }
-
         // Opens and closes the info when the button is clicked
         function togglePerson(button) {
         const song = button.closest(".song-icon");
@@ -35,24 +29,25 @@
 
 <body>
 
-    <header class="navbar">
-        <a href="#" class="logo">
-            <img src="assets/logo.png" alt="Wi-Fi Logo">
-        </a>
-        <nav class="nav-buttons">
-            <a class="nav-button" href="index.html">Tahanan</a>
-            <a class="nav-button" href="netfilix.html">Netfi-lix</a>
-            <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
-            <a class="nav-button" href="spotifi.html">Spoti-Fi</a>
-            <a class="nav-button" href="#">GrabE!</a>
-            <a class="nav-button" href="pinoystagram.html">Pinoystagram</a>
-            <a class="nav-button" href="abawt.html">Abawt</a>
-            <a class="nav-button" href="nakaraan.html">Nakaraan</a>
-        </nav>
-        <button>
-            <img src="assets/search.png" alt="Search">
-        </button>
-    </header>
+    <div class="desktop-view">
+        <header class="navbar">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Wi-Fi Logo">
+            </a>
+            <nav class="nav-buttons">
+                <a class="nav-button" href="index.html">Tahanan</a>
+                <a class="nav-button" href="netfilix.html">Netfi-lix</a>
+                <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
+                <a class="nav-button" href="spotifi.html">Spoti-Fi</a>
+                <a class="nav-button" href="#">GrabE!</a>
+                <a class="nav-button" href="pinoystagram.html">Pinoystagram</a>
+                <a class="nav-button" href="abawt.html">Abawt</a>
+                <a class="nav-button" href="nakaraan.html">Nakaraan</a>
+            </nav>
+            <button>
+                <img src="assets/search.png" alt="Search">
+            </button>
+        </header>
 
 
     <!-- Main Content -->
@@ -221,6 +216,69 @@
        <div class="bottom-bar"></div>
 
     </footer>
+
+    </div>
+
+    <div class="mobile-view">
+        <header class="navbar">
+            <div class="nav-left">
+                <button class="menu" type="button" aria-label="Open menu">
+                <img src="assets/tahanan assets/menu.svg" alt="menu">
+                </button>
+                <a href="#" class="logo-m"><img src="assets/logo.png" alt="Wi-Fi Logo"></a>
+            </div>
+                <button class="nav-search-m"><img src="assets/search.png" alt="Search"></button>
+                
+        </header>
+
+    <section class="hero-m">
+        <img class="sun-m" src="assets/tahanan assets/sun.png" alt="">
+        <img class="hero-tag-m" src="assets/tahanan assets/KONEK NA SA.png" alt="KONEK NA SA">
+        
+        <div class="hero-title-m">
+            <img src="assets/tahanan assets/WI-.png" alt="WI-">
+            <img src="assets/tahanan assets/Fi.png" alt="Fi" style="transform: translateY(-35%);">
+
+        </div>
+        
+        <img class="subtitle-m" src="assets/tahanan assets/Group 19.png" alt="Wikang Filipino">
+
+        <div class="hero-card-m">
+            <img src="assets/tahanan assets/contentborder-m.png" alt="">
+            <p>Muling nagbabalik ang Lasallian Rheims para sa proyektong Konek na sa Wi-Fi (Wikang Filipino)! Dito sa ating digital hub, sama-sama nating tutuklasin ang iba't ibang anyo ng ating wika at sining.</p>
+            <p>Mula sa mga pelikula at musika hanggang sa ating mayamang kasaysayan, inihanda ang website na ito upang maging isang malikhaing espasyo para sa malayang talakayan.</p>
+            <div class="buttons-m">
+                <button class="btn-m btn-primary-m">Tuklasin Natin!</button>
+                <button class="btn-m btn-secondary-m">Panoorin</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="apps-section-m">
+        <div class="section-title-m">✦ TUKLASIN ANG AMING POOK-SAPOT! ✦</div>
+        <div class="apps-grid-m">
+            <a class="app-card-m" href="spotifi.html"><div class="app-icon-m"><img src="assets/tahanan assets/SPOTIFY.png" alt=""></div></a>
+            <a class="app-card-m" href="index.html"><div class="app-icon-m"><img src="assets/tahanan assets/GRAB.svg" alt=""></div></a>
+            <a class="app-card-m" href="netfilix.html"><div class="app-icon-m"><img src="assets/tahanan assets/NETFLIX.png" alt=""></div></a>
+            <a class="app-card-m" href="wifipedia.html"><div class="app-icon-m"><img src="assets/tahanan assets/WIKIPEDIA.png" alt=""></div></a>
+            <a class="app-card-m" href="pinoystagram.html"><div class="app-icon-m"><img src="assets/tahanan assets/INSTAGRAM.png" alt=""></div></a>
+        </div>
+    </section>
+
+    <div class="footer-card-m">
+        <div class="footer-logos-m">
+            <img src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos">
+        </div>
+        <p class="footer-name-m">THE LASALLIAN<br>RHEIMS</p>
+        <div class="footer-socials-m">
+            <img src="assets/netfilix assets/footer-icons.png" alt="Socials">
+        </div>
+        <p class="footer-contact-m">info@rheims.net</p>
+        <p class="footer-contact-m">0920 426 5779</p>
+        <p class="footer-address-m">Academy of Saint John - La Salle Greenhills and De La Salle Zobel Partner School<br>Brgy. Sta. Clara, City of General Trias<br><br>© The Lasallian Rheims. All Rights Reserved</p>
+    </div>
+
+    </div>
 
 </body>
 </html>

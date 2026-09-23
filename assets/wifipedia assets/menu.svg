@@ -1,0 +1,30 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 48 48" 
+  width="48" 
+  height="48"
+  class="burger-icon "
+>
+  <defs>
+    
+    
+    <style>
+      .burger-icon rect {
+        transition: transform 0.30s ease-in-out, opacity 0.30s ease-in-out;
+      }
+      .burger-icon .top-bar { transform-origin: 24px 14px; }
+      .burger-icon .mid-bar { transform-origin: 24px 24px; }
+      .burger-icon .bot-bar { transform-origin: 24px 34px; }
+
+      .burger-icon.is-open .top-bar { transform: translate(0px, 10px) rotate(45deg); }
+      .burger-icon.is-open .mid-bar { transform: scaleX(0) opacity(0); }
+      .burger-icon.is-open .bot-bar { transform: translate(0px, -10px) rotate(-45deg); }
+    </style>
+  </defs>
+
+  <g fill="#000000" >
+    <rect className="top-bar" x="8" y="12" width="32" height="4" rx="1" />
+    <rect className="mid-bar" x="8" y="22" width="32" height="4" rx="1" />
+    <rect className="bot-bar" x="8" y="32" width="32" height="4" rx="1" />
+  </g>
+</svg>
