@@ -1,3 +1,9 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 :root {
     --color-page-background: #E8E8E8;
     --color-surface: #000000;

@@ -1,3 +1,9 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 :root {
     --color-page-background: #E8E8E8;
     --color-surface: #EEEEEE;
@@ -46,7 +52,7 @@ body {
 
 .home {
     width: 100%;
-    height: 1024px;
+    height: 100svh;
     overflow: visible;
     overflow-x: hidden;
     position: relative;
@@ -64,10 +70,14 @@ body {
     background-color: transparent;
     animation: headerColorChange linear;
     animation-timeline: scroll();
-    animation-range: 0px 706px;
+    animation-range: 0px 100svh;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.red {
+    background-color: var(--color-surface);
 }
 
 .menu {

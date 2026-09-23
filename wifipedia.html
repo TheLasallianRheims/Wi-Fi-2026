@@ -19,7 +19,7 @@
 
 <body>
 
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <a href="index.html" class="logo">
             <img src="assets/wifipedia assets/logo.png" alt="Wi-Fi Logo">
         </a>
@@ -42,6 +42,19 @@
             </button>
         </div>
     </header>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (!nav) return;
+
+            if (window.scrollY > window.innerHeight) {
+                nav.classList.add('red');
+            } else {
+                nav.classList.remove('red');
+            }
+        });
+    </script>
 
     <section class="home">
 
