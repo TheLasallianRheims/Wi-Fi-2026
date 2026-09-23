@@ -61,7 +61,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 12px;
     position: fixed;
     top: 0;
@@ -195,7 +195,6 @@ body {
 }
 
 .nav-icons {
-    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 18px;
@@ -676,7 +675,7 @@ button {
 
     .navbar {
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 12px;
         box-sizing: border-box;
     }
@@ -759,7 +758,7 @@ button {
     }
 
     .navbar {
-    justify-content: left;
+    justify-content: flex-start;
     }
 
     .nav-buttons {
