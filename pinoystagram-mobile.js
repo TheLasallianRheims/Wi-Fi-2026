@@ -1,10 +1,14 @@
 (function () {
-    document.querySelector('.header__menu').addEventListener('click', function () {
-        alert('Menu coming soon!');
+    document.querySelectorAll('.header__menu').forEach(function (menuButton) {
+        menuButton.addEventListener('click', function () {
+            alert('Menu coming soon!');
+        });
     });
 
-    document.querySelector('.header__search').addEventListener('click', function () {
-        alert('Search coming soon!');
+    document.querySelectorAll('.header__search').forEach(function (searchButton) {
+        searchButton.addEventListener('click', function () {
+            alert('Search coming soon!');
+        });
     });
 
     const firstPage = document.querySelector('.viewport');
