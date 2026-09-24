@@ -60,7 +60,7 @@
         <a href="index.html" class="logo">
             <img src="assets/wifipedia assets/logo.png" alt="Wi-Fi Logo">
         </a>
-        <nav class="nav-buttons">
+        <nav class="nav-buttons" id="nav-menu" aria-label="Main navigation">
             <a class="nav-button" href="index.html">Tahanan</a>
             <a class="nav-button" href="netfilix.html">Netfi-lix</a>
             <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
@@ -71,7 +71,7 @@
             <a class="nav-button" href="nakaraan.html">Nakaraan</a>
         </nav>
         <div class="nav-icons">
-            <button class="menu">
+            <button class="menu" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
                 <img src="assets/wifipedia assets/menu.svg" alt="Menu">
             </button>
             <button class="search">
@@ -333,5 +333,26 @@
 
     </footer>
 
+    <script>
+        const menuButton = document.querySelector('.menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        const setMenuState = (isOpen) => {
+            navMenu.classList.toggle('is-open', isOpen);
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        };
+
+        menuButton.addEventListener('click', () => setMenuState(!navMenu.classList.contains('is-open')));
+        navMenu.addEventListener('click', (event) => {
+            if (event.target.closest('.nav-button')) setMenuState(false);
+        });
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.navbar') && navMenu.classList.contains('is-open')) setMenuState(false);
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') setMenuState(false);
+        });
+    </script>
 </body>
 </html>
