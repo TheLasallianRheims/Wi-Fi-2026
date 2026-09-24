@@ -247,12 +247,6 @@ body {
     z-index: 30;
 }
 
-.page--content > .header__menu {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 2px 8px rgba(74, 39, 10, 0.22);
-}
-
 .page--content > .header__menu img {
     width: 24px;
     height: 19px;
