@@ -8,12 +8,6 @@
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
     
     <script>
-        // Check if screen width is 768px or smaller
-        if (window.innerWidth <= 768) {
-        // Redirect to mobile-specific HTML file
-            window.location.href = "tahanan-mobile.html";
-        }
-
         // Opens and closes the info when the button is clicked
         function togglePerson(button) {
         const song = button.closest(".song-icon");
@@ -34,6 +28,8 @@
 </head>
 
 <body>
+
+<div class="desktop-view">
 
     <header class="navbar">
         <a href="index.html" class="logo">
@@ -190,6 +186,65 @@
        <div class="bottom-bar"></div>
 
     </footer>
+
+</div>
+
+<div class="mobile-view">
+
+    <header class="navbar">
+        <div class="nav-left">
+            <button class="menu" type="button" aria-label="Open menu">
+            <img src="assets/tahanan assets/menu.svg" alt="menu">
+            </button>
+            <a href="#" class="logo-m"><img src="assets/logo.png" alt="Wi-Fi Logo"></a>
+        </div>
+            <button class="nav-search-m"><img src="assets/search.png" alt="Search"></button>
+            
+    </header>
+
+    <section class="hero-nk-m">
+        <img class="sun-nk-m" src="assets/tahanan assets/sun.png" alt="">
+        <img class="title-nk-m" src="assets/tahanan assets/abawt-nakaraan/nakaraantext.svg" alt="Nakaraan">
+    </section>
+
+    <section class="timeline-nk-m">
+        <div class="timeline-card-nk-m">
+            <img class="timeline-icon-nk-m" src="assets/tahanan assets/abawt-nakaraan/nakaraancard_1.png" alt="Icon 1">
+            <div class="timeline-card-content-nk-m">
+                <div class="timeline-label-nk-m timeline-label-one-nk-m">Konek Na Sa Wi-Fi 2023</div>
+                <div class="timeline-text-nk-m timeline-text-one-nk-m">Naghatid ng koneksyon at opoturnidad para sa mas maraming Pilipino.</div>
+            </div>
+        </div>
+        <div class="timeline-card-nk-m">
+            <img class="timeline-icon-nk-m" src="assets/tahanan assets/abawt-nakaraan/nakaraancard_2.png" alt="Icon 2">
+            <div class="timeline-card-content-nk-m">
+                <div class="timeline-label-nk-m timeline-label-two-nk-m">Konek Na Sa Wi-Fi 2022</div>
+                <div class="timeline-text-nk-m timeline-text-two-nk-m">Pinalakas ang digital inclusion at komunidad sa bawat koneksyon.</div>
+            </div>
+        </div>
+        <div class="timeline-card-nk-m">
+            <img class="timeline-icon-nk-m" src="assets/tahanan assets/abawt-nakaraan/nakaraancard_3.png" alt="Icon 3">
+            <div class="timeline-card-content-nk-m">
+                <div class="timeline-label-nk-m timeline-label-three-nk-m">Konek Na Sa Wi-Fi 2021</div>
+                <div class="timeline-text-nk-m timeline-text-three-nk-m">Nagbigay daan sa edukasyon at kaalaman sa wikang Filipino.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="partner-card-m-ab">
+        <div class="partner-logos-m-ab">
+            <img src="assets/wifipedia assets/desktop-footer-logos.png" alt="Logos">
+        </div>
+        <p class="partner-name-m-ab">THE LASALLIAN<br>RHEIMS</p>
+        <div class="partner-socials-m-ab">
+            <img src="assets/netfilix assets/footer-icons.png" alt="Socials">
+        </div>
+        <p class="partner-contact-m-ab">info@rheims.net</p>
+        <p class="partner-contact-m-ab">0920 426 5779</p>
+        <p class="partner-address-m-ab">Academy of Saint John - La Salle Greenhills and De La Salle Zobel Partner School<br>Brgy. Sta. Clara, City of General Trias<br><br>© The Lasallian Rheims. All Rights Reserved</p>
+    </div>
+
+</div>
 
 </body>
 </html>
