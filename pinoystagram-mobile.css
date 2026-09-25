@@ -204,8 +204,49 @@ body {
 
 .navbar > .header__menu,
 .navbar > .header__logo,
-.navbar > .header__search {
+.navbar > .header__search,
+.navbar > .nav-menu {
     pointer-events: auto;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    width: min(82vw, 340px);
+    height: 100svh;
+    max-width: none;
+    margin: 0;
+    padding: 96px 28px 28px;
+    background-color: #fff;
+    box-shadow: -12px 0 28px rgb(0 0 0 / 15%);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 280ms ease-in-out;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.nav-menu.is-open {
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.nav-menu .nav-button {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid rgb(112 109 109 / 22%);
+    color: #000;
+    font-size: clamp(1rem, 4vw, 1.35rem);
+    text-decoration: none;
+    white-space: normal;
 }
 
 .header__menu,
