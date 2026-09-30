@@ -449,6 +449,7 @@ button {
 }
 
 .content-box h2 {
+    bottom: 0.9vw;
     grid-column: 2;
     grid-row: 1;
     position: relative;
@@ -465,6 +466,7 @@ button {
 }
 
 .content-box p {
+    bottom: 2vw;
     grid-column: 2;
     grid-row: 2;
     position: relative;
