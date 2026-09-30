@@ -1128,18 +1128,18 @@ button {
     /* APPS SECTION */
     .apps-section-m {
         background: #FFECB5;
-        padding: 30px 16px 40px;
+        padding: 36px 16px 48px;
     }
 
     .section-title-m {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 6px;
+        gap: 8px;
         text-align: center;
         color: var(--primary-brown);
         font-family: Inter, sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 800;
         letter-spacing: 0.5px;
         line-height: 1.15;
@@ -1155,7 +1155,7 @@ button {
 
     .apps-section-m .decorative-stars img,
     .apps-section-m .decorative-stars-2 img {
-        width: 20px;
+        width: 24px;
         height: auto;
         flex-shrink: 0;
     }
@@ -1166,7 +1166,7 @@ button {
 
     .apps-section-m .section-title-after .app-logo {
         display: block;
-        width: min(340px, 96vw);
+        width: min(380px, 100vw);
         height: auto;
         transform: none;
     }
@@ -1174,9 +1174,9 @@ button {
     .apps-grid-m {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
         max-width: 100%;
-        padding: 0 8px;
+        padding: 0;
     }
 
     .app-card-m {
@@ -1188,8 +1188,9 @@ button {
     }
 
     .app-icon-m {
-        width: 76px;
-        height: 94px;
+        width: min(92px, calc((100vw - 56px) / 4));
+        aspect-ratio: 76 / 94;
+        height: auto;
         border-radius: 14px;
         background: white;
         display: flex;
