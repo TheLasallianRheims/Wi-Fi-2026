@@ -997,14 +997,14 @@ button {
     /* HERO */
     .hero-m {
         background: var(--primary-cream);
-        padding: 90px 20px 40px;
+        padding: 120px 20px 40px;
         position: relative;
         overflow: hidden;
     }
 
     .sun-m {
         position: absolute;
-        top: 30px;
+        top: 70px;
         right: 0px;
         width: 140px;
         height: auto;
@@ -1015,7 +1015,7 @@ button {
         height: 13.2vw;
         width: auto;
         display: block;
-        margin-bottom: -15px;
+        margin-bottom: -12px;
         position: relative;
         z-index: 1;
     }
@@ -1041,24 +1041,27 @@ button {
         height: auto;
         position: relative;
         z-index: 1;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .hero-card-m {
-        background: var(--primary-cream);
+        background: #FFEBAF;
         border-radius: 14px;
         padding: 36px 30px;
         position: relative;
         z-index: 1;
         overflow: hidden;
-        margin: 0 100px 0 30px;
+        margin: 24px 30px 0 30px;
     }
 
     .hero-card-m p {
-        font-size: 11px;
+        font-weight: Medium;
+        font-family: inter;
+        font-size: 12px;
         line-height: 1.7;
         margin: 0 0 14px;
-        color: #4a3220;
+        color: #603516;
     }
 
     .hero-card-m img {
@@ -1081,7 +1084,8 @@ button {
 
     .btn-m {
         flex: 1;
-        padding: 8px 10px;
+        height: 32px;
+        padding: 0px 0px;
         font-size: 9px;
         font-weight: 700;
         border-radius: 20px;
@@ -1112,13 +1116,43 @@ button {
     }
 
     .section-title-m {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
         text-align: center;
         color: var(--primary-brown);
         font-family: Inter, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 800;
         letter-spacing: 0.5px;
-        margin-bottom: 20px;
+        line-height: 1.15;
+        margin: 0 0 4px;
+    }
+
+    .apps-section-m .section-title-text {
+        flex: 0 1 auto;
+        min-width: 0;
+        white-space: nowrap;
+        margin-top: 0;
+    }
+
+    .apps-section-m .decorative-stars img,
+    .apps-section-m .decorative-stars-2 img {
+        width: 20px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .apps-section-m .section-title-after {
+        margin-bottom: 4px;
+    }
+
+    .apps-section-m .section-title-after .app-logo {
+        display: block;
+        width: min(340px, 96vw);
+        height: auto;
+        transform: none;
     }
 
     .apps-grid-m {
@@ -1138,8 +1172,8 @@ button {
     }
 
     .app-icon-m {
-        width: 69px;
-        height: 85px;
+        width: 76px;
+        height: 94px;
         border-radius: 14px;
         background: white;
         display: flex;
