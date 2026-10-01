@@ -418,6 +418,7 @@ body {
     min-height: 100%;
     height: auto;
     max-width: 473px;
+    z-index: 21;
     justify-content: flex-start;
     background: #fffbd4;
     overflow: hidden;
@@ -658,7 +659,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding: 8px 8px 0;
+    width: 100%;
+    padding: 8px 12px 0;
 }
 
 .mobile-footer .footer-bottom > img {
@@ -698,6 +700,10 @@ body {
 .mobile-footer .footer-copyright {
     font-size: clamp(.78rem, 3.3vw, .95rem);
     line-height: 1.15;
+}
+
+.mobile-footer .footer-bottom p.footer-description {
+    font-size: clamp(.78rem, 3.3vw, .95rem);
 }
 
 .mobile-footer .footer-location {
@@ -760,26 +766,81 @@ body {
     width: 21px;
     height: 21px;
     border-width: 3px;
+    box-sizing: border-box;
 }
 
 .mobile-footer .corner-left-box,
 .mobile-footer .corner-right-box {
+    position: absolute;
     bottom: 21px;
+}
+
+.mobile-footer .corner-left-box {
+    left: 0;
+    border-right: 3px solid #6e3b16;
+    border-top: 3px solid #6e3b16;
+}
+
+.mobile-footer .corner-right-box {
+    right: 0;
+    border-left: 3px solid #6e3b16;
+    border-top: 3px solid #6e3b16;
 }
 
 .mobile-footer .corner-left-line,
 .mobile-footer .corner-right-line {
+    position: absolute;
     bottom: 42px;
+}
+
+.mobile-footer .corner-left-line {
+    left: 0;
+    border-left: 3px solid #d8a232;
+}
+
+.mobile-footer .corner-right-line {
+    right: 0;
+    border-right: 3px solid #d8a232;
+}
+
+.mobile-footer .corner-left::after,
+.mobile-footer .corner-right::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border: 3px solid #6e3b16;
+}
+
+.mobile-footer .corner-left::after {
+    left: 0;
+}
+
+.mobile-footer .corner-right::after {
+    right: 0;
+}
+
+.mobile-footer .corner-left::before,
+.mobile-footer .corner-right::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid #6e3b16;
+}
+
+.mobile-footer .corner-left::before {
+    right: 0;
+    border-right: 3px solid #6e3b16;
 }
 
 .mobile-footer .corner-right::before {
     right: 21px;
+    border-left: 3px solid #6e3b16;
 }
 
 .mobile-footer .bottom-bar {
     width: 100%;
-    height: 16px;
-    margin: 0;
+    height: 24px;
+    margin: 16px 0 20px;
     background-color: #7c431b;
 }
 
