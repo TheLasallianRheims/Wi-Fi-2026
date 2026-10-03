@@ -240,9 +240,10 @@ body {
 
 .creator-card p {
     margin: 0;
-    font-size: clamp(11px, 3.05vw, 14px);
+    font-size: clamp(15.45px, 3.05vw, 14px);
     line-height: 1.32;
     text-align: left;
+    font-weight: Medium;
 }
 
 .creator-decoration {

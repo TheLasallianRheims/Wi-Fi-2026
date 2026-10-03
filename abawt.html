@@ -6,15 +6,6 @@
     <title>Abawt</title>
 
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    
-    <script>
-        // Opens and closes the info when the button is clicked
-        function togglePerson(button) {
-        const song = button.closest(".song-icon");
-        const info = song.querySelector(".song-info");
-        info.classList.toggle("open");
-        }
-    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -374,16 +365,50 @@
 
 <div class="mobile-view">
 
-    <header class="navbar">
-        <div class="nav-left">
-            <button class="menu" type="button" aria-label="Open menu">
-            <img src="assets/tahanan assets/menu.svg" alt="menu">
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/wifipedia assets/logo.png" alt="Wi-Fi Logo">
+        </a>
+        <nav class="nav-buttons" id="nav-menu" aria-label="Main navigation">
+            <a class="nav-button" href="index.html">Tahanan</a>
+            <a class="nav-button" href="netfilix.html">Netfi-lix</a>
+            <a class="nav-button" href="wifipedia.html">Wi-Fipedia</a>
+            <a class="nav-button" href="spotifi.html">Spoti-Fi</a>
+            <a class="nav-button" href="pinoystagram.html">Pinoystagram</a>
+            <a class="nav-button" href="abawt.html">Abawt</a>
+            <a class="nav-button" href="nakaraan.html">Nakaraan</a>
+        </nav>
+        <div class="nav-icons">
+            <button class="menu" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+                <img src="assets/wifipedia assets/menu.svg" alt="Menu">
             </button>
-            <a href="#" class="logo-m"><img src="assets/logo.png" alt="Wi-Fi Logo"></a>
+            <button class="search">
+                <img src="assets/search(2).svg" alt="Search">
+            </button>
         </div>
-            <button class="nav-search-m"><img src="assets/search.png" alt="Search"></button>
-            
     </header>
+
+    <script>
+        const menuButton = document.querySelector('.menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        const setMenuState = (isOpen) => {
+            navMenu.classList.toggle('is-open', isOpen);
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        };
+
+        menuButton.addEventListener('click', () => setMenuState(!navMenu.classList.contains('is-open')));
+        navMenu.addEventListener('click', (event) => {
+            if (event.target.closest('.nav-button')) setMenuState(false);
+        });
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.navbar') && navMenu.classList.contains('is-open')) setMenuState(false);
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') setMenuState(false);
+        });
+    </script>
 
     <section class="hero-ab-m">
         <img class="sun-ab-m" src="assets/tahanan assets/sun.png" alt="">
@@ -396,7 +421,7 @@
 
         <div class="buttons-ab-m">
             <button class="btn-ab-m btn-ab-primary-m">Aralin Natin!</button>
-            <a href="index.html#apps-section" class="btn-ab-m btn-ab-secondary-m">Mga Apps</a>
+            <a href="index.html#apps-section-m" class="btn-ab-m btn-ab-secondary-m">Mga Apps</a>
         </div>
     </section>
 
@@ -421,8 +446,8 @@
         <div class="members-divider-ab-m">
             <span class="line"></span><span class="star">✦</span><span class="line"></span>
         </div>
-        <h1 class="members-header-ab-m">Kilalanin Ang Pangkat</h1>
-        <p class="members-desc-ab-m">Ang mga tauhang nagsalin ng kanilang sikap sa pagbuo ng websayt na ito.</p>
+        <h1 class="members-header-ab-m">Mga nagtrabaho sa proyekto</h1>
+        <p class="members-desc-ab-m">Ang mga tauhang na bumigay ng kanilang puso at sikap upang mabuo ang websayt na ito.</p>
 
         <div class="members-grid-ab-m">
             <div class="member-card-ab-m">
