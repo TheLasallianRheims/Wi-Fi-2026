@@ -200,6 +200,11 @@ body {
     height: var(--navbar-height);
     z-index: 1000;
     pointer-events: none;
+    background-color: transparent;
+}
+
+.second-page .navbar {
+    background-color: #fffbd4;
 }
 
 .navbar > .header__menu,

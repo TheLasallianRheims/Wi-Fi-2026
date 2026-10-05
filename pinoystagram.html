@@ -256,5 +256,21 @@
 
     </footer>
 </div>
+<script>
+    const viewport = document.querySelector('.viewport');
+    const navbar = document.querySelector('.navbar');
+    const mainContent = document.getElementById('main-content');
+
+    const updateNavbarBackground = () => {
+        const mainTop = mainContent.offsetTop;
+        const scrollTop = viewport.scrollTop;
+        const mainIsVisible = scrollTop >= mainTop;
+
+        navbar.classList.toggle('is-main', mainIsVisible);
+    };
+
+    viewport.addEventListener('scroll', updateNavbarBackground);
+    updateNavbarBackground();
+</script>
 </body>
 </html>
