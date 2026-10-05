@@ -769,6 +769,7 @@ button {
     
     .navbar {
         justify-content: flex-start;
+        background-color: var(--primary-cream);
         padding: 0 12px;
         box-sizing: border-box;
         overflow: hidden;
@@ -837,13 +838,13 @@ button {
     /* HERO */
     .hero-ab-m {
         background: var(--primary-cream);
-        padding: 24px 20px 36px;
+        padding: 100px 20px 36px;
         position: relative;
         overflow: hidden;
     }
     .sun-ab-m {
         position: absolute;
-        top: -10px;
+        top: 70px;
         right: -20px;
         width: 130px;
         height: auto;

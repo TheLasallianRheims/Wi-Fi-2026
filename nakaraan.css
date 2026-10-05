@@ -8,6 +8,7 @@
     --color-footer-heading: #12510C;
     --color-page-background: #E8E8E8;
     --color-surface: #000000;
+    --color-surface-white: #FFFFFF;
     --color-pure-white: #FFFFFF;
     --color-accent-gold: #D8A232;
     --color-decorative-brown: #6E3B16;
@@ -72,6 +73,14 @@ body {
     width: 100%;
 }
 
+.menu {
+    display: none;
+}
+
+.search {
+    margin-right: 50px;
+}
+
 .nav-buttons {
     display: flex;
     width: 1114px;
@@ -80,6 +89,12 @@ body {
     margin-top: 18px;
     padding: 17px 23px 17px 23px;
     color: var(--primary-cream);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
 }
 
 .nav-button {
@@ -695,50 +710,52 @@ button {
         position: sticky;
         top: 0;
         z-index: 100;
-    }
-
-    .nav-left {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .menu {
-        left: 1.27%;
-        top: 0.98%;
-        min-width: 44px;
-        min-height: 44px;
-    }
-
-    .menu img {
         display: block;
-        width: 21px;
-        height: 17px;
-    }
-    
-    .logo-m {
-        width: 50%;
-        height: auto;
-        overflow: hidden;
-        transform: translateY(10px);
-    }
-    .logo-m img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
-    .nav-search-m {
-        width: 22px;
-        height: 22px;
-        border: none;
-        background: none;
-        padding: 0;
+    .nav-buttons {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        width: min(82vw, 340px);
+        height: 100svh;
+        max-width: none;
+        margin: 0;
+        padding: 96px 28px 28px;
+        box-sizing: border-box;
+        background-color: var(--color-surface-white);
+        box-shadow: -12px 0 28px rgb(0 0 0 / 15%);
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 280ms ease-in-out;
+        pointer-events: none;
+        visibility: hidden;
     }
-    .nav-search-m img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+
+    .nav-buttons.is-open {
+        transform: translateX(0);
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .nav-buttons .nav-button {
+        display: block;
+        padding: 14px 0;
+        border-bottom: 1px solid rgb(112 109 109 / 22%);
+        color: #000000;
+        font-size: clamp(1rem, 4vw, 1.35rem);
+        white-space: normal;
     }
 
     .hero-nk-m {
