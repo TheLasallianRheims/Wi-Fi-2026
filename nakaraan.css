@@ -167,8 +167,8 @@ button {
 }
 
 .btn {
-    background-color: #FFE494;
-    border: 2px solid #F2BF27;
+    background-color: #FFEBAF;
+    border: 2px solid #DAA916;
     border-radius: 15px;
     padding: 130px 250px 80px 210px;
     position: relative;
@@ -195,6 +195,38 @@ button {
     margin-left: -195px;
 }
 
+.btn-one img[alt="Konek Na Sa WI-FI 2024"] {
+    position: relative;
+    left: 168px;
+    top: -70px;
+    transform: scale(1.33);
+    transform-origin: top left;
+}
+
+.btn-two img[alt="Konek Na Sa WI-FI 2023"] {
+    position: relative;
+    left: 168px;
+    top: -70px;
+    transform: scale(1.33);
+    transform-origin: top left;
+}
+
+.btn-three img[alt="Konek Na Sa WI-FI 2022"] {
+    position: relative;
+    left: 168px;
+    top: -70px;
+    transform: scale(1.33);
+    transform-origin: top left;
+}
+
+.btn-four img[alt="Konek Na Sa WI-FI 2021"] {
+    position: relative;
+    left: 168px;
+    top: -70px;
+    transform: scale(1.33);
+    transform-origin: top left;
+}
+
 .btn-text {
     display: flex;
     flex-direction: column;
@@ -215,10 +247,14 @@ button {
 }
 
 .btn-two {
-    color: #895129;
+    color: #E2725B;
 }
 
 .btn-three {
+    color: #895129;
+}
+
+.btn-four {
     color: #E3B323;
 }
 
@@ -228,6 +264,7 @@ button {
     min-height: 0;
     height: auto;
     margin: 0 auto;
+    position: relative;
     z-index: 100;
 }
 
