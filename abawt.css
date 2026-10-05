@@ -464,7 +464,11 @@ button {
     flex-direction: column;
     align-items: center;
     z-index: 2;
-    
+}
+
+.project-member-card:nth-last-child(-n + 3) {
+    position: relative;
+    left: calc(50% + 1vw);
 }
 
 .project-member {
@@ -986,6 +990,9 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .member-card-ab-m:last-child {
+        grid-column: 1 / -1;
     }
     .member-photo-wrap-ab-m {
         position: relative;
