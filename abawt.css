@@ -71,6 +71,7 @@ body {
     z-index: 1000;
     background-color: transparent;
     width: 100%;
+    background-color: var(--primary-cream);
 }
 
 .nav-buttons {
